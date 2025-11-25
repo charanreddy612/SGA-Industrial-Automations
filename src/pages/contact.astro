@@ -8,206 +8,351 @@ import BaseLayout from "../layouts/BaseLayout.astro";
 >
   <section class="page-header">
     <h1>Contact</h1>
-    <p>SGA Industrial Automations</p>
+    <p>Let’s talk about your next automation project.</p>
   </section>
 
-  <section class="contact-grid">
-    <!-- Left: Office Details (like SR head office block) -->
-    <div class="contact-info">
-      <h2>Our Head Office</h2>
-      <p class="label">Address:</p>
-      <p>
-        Flat.no.101, R V Gayathri Arcade,<br />
-        Gayatri Nagar, Godavari Homes,<br />
-        Quthbullapur, Hyderabad,<br />
-        Telangana, India – 500055
-      </p>
+  <section class="contact-shell">
+    <div class="contact-grid">
+      <!-- Left: Office Details -->
+      <div class="contact-card contact-info">
+        <h2>Our Head Office</h2>
+        <p class="subtitle">
+          Reach out for automation, IIoT, panel design or service support.
+        </p>
 
-      <p class="label">Phone:</p>
-      <p class="phone">
-        📞 <a href="tel:+917673902729">+91 76739 02729</a>
-      </p>
+        <div class="info-block">
+          <span class="info-label">Address</span>
+          <p>
+            Flat.no.101, R V Gayathri Arcade,<br />
+            Gayatri Nagar, Godavari Homes,<br />
+            Quthbullapur, Hyderabad,<br />
+            Telangana, India – 500055
+          </p>
+        </div>
 
-      <p class="call-note"><strong>Call us for more details</strong></p>
+        <div class="info-block">
+          <span class="info-label">Phone</span>
+          <p class="phone">
+            📞 <a href="tel:+917673902729">+91 76739 02729</a>
+          </p>
+        </div>
 
-      <a class="call-btn" href="tel:+917673902729">Call Now</a>
-    </div>
+        <p class="call-note"><strong>Call us for more details</strong></p>
 
-    <!-- Right: Get In Touch form (static, no backend yet) -->
-    <div class="contact-form">
-      <h2>Get In Touch</h2>
-      <p>Share your requirement and we’ll get back to you.</p>
+        <div class="button-row">
+          <a class="btn btn-primary" href="tel:+917673902729">
+            <span class="btn-icon">🤖</span>
+            <span>Call Now</span>
+          </a>
+          <a class="btn btn-ghost" href="mailto:info@sgaautomations.com">
+            <span class="btn-icon">✉️</span>
+            <span>Email Us</span>
+          </a>
+        </div>
+      </div>
 
-      <form action="#" method="post">
-        <div class="field-row">
+      <!-- Right: Futuristic-style Form -->
+      <div class="contact-card contact-form">
+        <h2>Get In Touch</h2>
+        <p class="subtitle">
+          Share your requirement. Our team will respond with the best-fit automation approach.
+        </p>
+
+        <form action="#" method="post" class="form-grid">
           <div class="field">
             <label for="name">Name</label>
             <input id="name" name="name" type="text" placeholder="Your full name" required />
           </div>
+
           <div class="field">
             <label for="email">Email</label>
             <input id="email" name="email" type="email" placeholder="you@example.com" required />
           </div>
-        </div>
 
-        <div class="field-row">
           <div class="field">
             <label for="phone">Phone</label>
             <input id="phone" name="phone" type="tel" placeholder="+91 XXXXX XXXXX" />
           </div>
+
           <div class="field">
             <label for="type">Enquiry Type</label>
             <select id="type" name="type">
               <option>Sales Enquiry</option>
               <option>Service Enquiry</option>
+              <option>Panel / Retrofit</option>
               <option>General Query</option>
             </select>
           </div>
-        </div>
 
-        <div class="field">
-          <label for="message">Message</label>
-          <textarea
-            id="message"
-            name="message"
-            rows="4"
-            placeholder="Tell us briefly about your application, machine or plant..."
-          ></textarea>
-        </div>
+          <div class="field field-full">
+            <label for="message">Message</label>
+            <textarea
+              id="message"
+              name="message"
+              rows="4"
+              placeholder="Tell us about your machine, plant or application…"
+            ></textarea>
+          </div>
 
-        <button type="submit" class="submit-btn">Send Message</button>
-      </form>
+          <div class="form-actions">
+            <button type="submit" class="btn btn-primary">
+              <span class="btn-icon">⚙️</span>
+              <span>Send Message</span>
+            </button>
+          </div>
+        </form>
+      </div>
     </div>
   </section>
 </BaseLayout>
 
 <style>
   .page-header {
+    text-align: center;
     margin-bottom: 2rem;
   }
 
   .page-header h1 {
-    font-size: 2.2rem;
-    margin-bottom: 0.25rem;
+    font-size: 2.4rem;
+    margin-bottom: 0.35rem;
+    letter-spacing: 0.04em;
   }
 
   .page-header p {
-    color: #6b7280;
     margin: 0;
+    color: #9ca3af;
+  }
+
+  /* Robotic background shell */
+  .contact-shell {
+    position: relative;
+    padding: 1.5rem 0 2.5rem;
+    border-radius: 24px;
+    background: radial-gradient(circle at top left, #1f2937, #020617 55%);
+    overflow: hidden;
+  }
+
+  .contact-shell::before,
+  .contact-shell::after {
+    content: "";
+    position: absolute;
+    border-radius: 999px;
+    filter: blur(40px);
+    opacity: 0.35;
+    pointer-events: none;
+  }
+
+  .contact-shell::before {
+    width: 220px;
+    height: 220px;
+    background: #22d3ee;
+    top: -60px;
+    right: 5%;
+  }
+
+  .contact-shell::after {
+    width: 260px;
+    height: 260px;
+    background: #4f46e5;
+    bottom: -80px;
+    left: -40px;
   }
 
   .contact-grid {
+    position: relative;
+    z-index: 1;
     display: grid;
-    grid-template-columns: minmax(0, 1.1fr) minmax(0, 1.4fr);
+    grid-template-columns: minmax(0, 1.05fr) minmax(0, 1.45fr);
     gap: 2rem;
     align-items: flex-start;
   }
 
-  .contact-info,
-  .contact-form {
-    background: #ffffff;
-    border-radius: 16px;
-    padding: 1.75rem;
-    box-shadow: 0 4px 18px rgba(15, 23, 42, 0.06);
+  .contact-card {
+    background: rgba(15, 23, 42, 0.88);
+    border-radius: 20px;
+    padding: 1.9rem;
+    box-shadow: 0 18px 45px rgba(0, 0, 0, 0.6);
+    border: 1px solid rgba(148, 163, 184, 0.25);
+    backdrop-filter: blur(12px);
+    color: #e5e7eb;
   }
 
-  .contact-info h2,
-  .contact-form h2 {
+  .contact-card h2 {
     margin-top: 0;
-    margin-bottom: 0.75rem;
+    margin-bottom: 0.4rem;
+    font-size: 1.4rem;
   }
 
-  .label {
-    font-weight: 600;
-    margin-bottom: 0.25rem;
-    margin-top: 1rem;
+  .subtitle {
+    margin-top: 0;
+    margin-bottom: 1.5rem;
+    font-size: 0.95rem;
+    color: #9ca3af;
+  }
+
+  .info-block {
+    margin-bottom: 1.1rem;
+  }
+
+  .info-label {
+    text-transform: uppercase;
+    font-size: 0.75rem;
+    letter-spacing: 0.12em;
+    color: #9ca3af;
+    display: inline-block;
+    margin-bottom: 0.3rem;
   }
 
   .phone a {
     text-decoration: none;
-    color: #0b2b4c;
+    color: #22d3ee;
     font-weight: 600;
+  }
+
+  .phone a:hover {
+    text-decoration: underline;
   }
 
   .call-note {
-    margin-top: 1.25rem;
-    font-size: 1.05rem;
-    color: #0b2b4c;
+    margin-top: 0.8rem;
+    margin-bottom: 0.5rem;
+    color: #e5e7eb;
   }
 
-  .call-btn {
-    display: inline-block;
+  .button-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem;
     margin-top: 0.75rem;
+  }
+
+  .btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.45rem;
     padding: 0.7rem 1.5rem;
     border-radius: 999px;
-    background: #0b2b4c;
-    color: #ffffff;
-    text-decoration: none;
+    font-size: 0.95rem;
     font-weight: 600;
+    border: 1px solid transparent;
+    cursor: pointer;
+    text-decoration: none;
+    transition: transform 0.12s ease, box-shadow 0.12s ease, background 0.15s, border-color 0.15s, color 0.15s;
+    white-space: nowrap;
   }
 
-  .contact-form p {
-    margin-top: 0;
-    margin-bottom: 1.25rem;
-    color: #4b5563;
+  .btn-primary {
+    background: radial-gradient(circle at top left, #22d3ee, #0ea5e9 40%, #4f46e5 100%);
+    color: #0b1020;
+    box-shadow: 0 0 20px rgba(34, 211, 238, 0.45);
+    border-color: rgba(56, 189, 248, 0.7);
   }
 
-  form {
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
+  .btn-primary:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 0 28px rgba(34, 211, 238, 0.8);
   }
 
-  .field-row {
+  .btn-ghost {
+    background: transparent;
+    color: #e5e7eb;
+    border-color: rgba(148, 163, 184, 0.7);
+  }
+
+  .btn-ghost:hover {
+    background: rgba(15, 23, 42, 0.9);
+    border-color: #22d3ee;
+    box-shadow: 0 0 16px rgba(34, 211, 238, 0.35);
+  }
+
+  .btn-icon {
+    font-size: 1.1rem;
+    display: inline-flex;
+  }
+
+  /* Form styling */
+  .form-grid {
     display: grid;
     grid-template-columns: repeat(2, minmax(0, 1fr));
-    gap: 1rem;
+    gap: 1rem 1.1rem;
+  }
+
+  .field {
+    display: flex;
+    flex-direction: column;
+    gap: 0.3rem;
+  }
+
+  .field-full {
+    grid-column: 1 / -1;
   }
 
   .field label {
-    display: block;
-    font-size: 0.9rem;
-    margin-bottom: 0.35rem;
-    font-weight: 600;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+    color: #9ca3af;
   }
 
   .field input,
   .field select,
   .field textarea {
-    width: 100%;
-    border-radius: 10px;
-    border: 1px solid #d1d5db;
+    border-radius: 12px;
+    border: 1px solid rgba(148, 163, 184, 0.5);
     padding: 0.55rem 0.75rem;
     font: inherit;
-    background: #f9fafb;
+    background: rgba(15, 23, 42, 0.9);
+    color: #f9fafb;
+    outline: none;
+    transition: border-color 0.12s ease, box-shadow 0.12s ease, background 0.12s ease;
   }
 
   .field textarea {
     resize: vertical;
+    min-height: 110px;
   }
 
-  .submit-btn {
+  .field input::placeholder,
+  .field textarea::placeholder {
+    color: #6b7280;
+  }
+
+  .field input:focus,
+  .field select:focus,
+  .field textarea:focus {
+    border-color: #22d3ee;
+    box-shadow: 0 0 0 1px rgba(34, 211, 238, 0.4);
+    background: rgba(15, 23, 42, 0.95);
+  }
+
+  .form-actions {
+    grid-column: 1 / -1;
     margin-top: 0.5rem;
-    padding: 0.8rem 1.6rem;
-    border-radius: 999px;
-    border: none;
-    background: #0b2b4c;
-    color: #ffffff;
-    font-weight: 600;
-    cursor: pointer;
-  }
-
-  .submit-btn:hover {
-    opacity: 0.95;
+    display: flex;
+    justify-content: flex-end;
   }
 
   @media (max-width: 900px) {
     .contact-grid {
       grid-template-columns: 1fr;
     }
+  }
 
-    .field-row {
+  @media (max-width: 640px) {
+    .contact-shell {
+      padding-inline: 0.8rem;
+    }
+
+    .contact-card {
+      padding: 1.4rem;
+    }
+
+    .form-grid {
       grid-template-columns: 1fr;
+    }
+
+    .form-actions {
+      justify-content: flex-start;
     }
   }
 </style>
