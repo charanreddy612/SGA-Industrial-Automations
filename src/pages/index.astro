@@ -1,0 +1,185 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+---
+
+<BaseLayout
+  title="SGA Industrial Automations | Industrial Automation & Control Panels"
+  description="SGA Industrial Automations provides turnkey industrial automation, control panel design, IIoT, SCADA, and energy management solutions for manufacturing & process industries."
+>
+  <section class="hero">
+    <div class="hero-text">
+      <h1>Industrial Automation & IIoT Solutions for Smarter Factories</h1>
+      <p>
+        We help manufacturing and process industries automate, monitor, and
+        optimize their machines and plants with PLC, SCADA, IIoT, and custom
+        control panels.
+      </p>
+      <a href="/contact" class="cta-btn">Request a Consultation</a>
+    </div>
+    <div class="hero-image">
+      <img
+        src="/images/plant-dashboard.jpg"
+        alt="Industrial automation control room"
+        loading="lazy"
+      />
+    </div>
+  </section>
+
+  <section class="section">
+    <h2>Solutions We Offer</h2>
+    <div class="cards-grid">
+      <article class="card">
+        <h3>Industrial Automation</h3>
+        <p>
+          PLC, SCADA, VFD, and servo-based automation for machines and process
+          plants.
+        </p>
+        <a href="/solutions#industrial-automation">Learn more →</a>
+      </article>
+      <article class="card">
+        <h3>IIoT & Data Analytics</h3>
+        <p>
+          Connect machines to the cloud, monitor OEE, energy, and production
+          KPIs in real-time.
+        </p>
+        <a href="/solutions#iiot">Learn more →</a>
+      </article>
+      <article class="card">
+        <h3>Control Panel Design</h3>
+        <p>
+          Custom MCC, PCC, PLC, and automation panels designed, wired, and
+          tested as per standards.
+        </p>
+        <a href="/solutions#panels">Learn more →</a>
+      </article>
+      <article class="card">
+        <h3>Energy Management</h3>
+        <p>
+          Energy meters, monitoring systems, and dashboards to reduce
+          electrical energy costs.
+        </p>
+        <a href="/solutions#energy-management">Learn more →</a>
+      </article>
+    </div>
+  </section>
+
+  <section class="section">
+    <h2>Industries We Serve</h2>
+    <div class="chips">
+      <span>Automotive</span>
+      <span>Food & Beverage</span>
+      <span>Pharma</span>
+      <span>Water & Wastewater</span>
+      <span>Textile</span>
+      <span>Building Automation</span>
+    </div>
+  </section>
+
+  <section class="section">
+    <h2>Why SGA Industrial Automations?</h2>
+    <div class="cards-grid">
+      <article class="card">
+        <h3>End-to-End Expertise</h3>
+        <p>
+          From design and programming to commissioning and support, we handle
+          complete automation projects.
+        </p>
+      </article>
+      <article class="card">
+        <h3>Brand-Independent</h3>
+        <p>
+          We work with major PLC & drive brands, selecting the best-fit
+          solution for your application.
+        </p>
+      </article>
+      <article class="card">
+        <h3>On-Site & Remote Support</h3>
+        <p>
+          Quick response for breakdowns, modifications, and upgrades to
+          minimize your downtime.
+        </p>
+      </article>
+    </div>
+  </section>
+</BaseLayout>
+
+<style>
+  .hero {
+    display: grid;
+    grid-template-columns: minmax(0, 1.3fr) minmax(0, 1fr);
+    gap: 2rem;
+    align-items: center;
+    margin-bottom: 3rem;
+  }
+
+  .hero-text h1 {
+    font-size: 2.4rem;
+    margin-bottom: 1rem;
+  }
+
+  .hero-text p {
+    font-size: 1.05rem;
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
+  }
+
+  .cta-btn {
+    display: inline-block;
+    padding: 0.75rem 1.5rem;
+    border-radius: 999px;
+    border: none;
+    background: #0b2b4c;
+    color: #ffffff;
+    font-weight: 600;
+    text-decoration: none;
+  }
+
+  .hero-image img {
+    width: 100%;
+    max-height: 320px;
+    object-fit: cover;
+    border-radius: 16px;
+  }
+
+  .section {
+    margin-bottom: 3rem;
+  }
+
+  .section h2 {
+    font-size: 1.8rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .cards-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+    gap: 1.5rem;
+  }
+
+  .card {
+    background: #ffffff;
+    border-radius: 16px;
+    padding: 1.5rem;
+    box-shadow: 0 4px 18px rgba(15, 23, 42, 0.06);
+  }
+
+  .chips {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+  }
+
+  .chips span {
+    background: #ffffff;
+    padding: 0.4rem 0.9rem;
+    border-radius: 999px;
+    font-size: 0.9rem;
+    box-shadow: 0 2px 8px rgba(15, 23, 42, 0.06);
+  }
+
+  @media (max-width: 768px) {
+    .hero {
+      grid-template-columns: 1fr;
+    }
+  }
+</style>
