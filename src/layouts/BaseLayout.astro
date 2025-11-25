@@ -1,0 +1,103 @@
+---
+const {
+  title = "SGA Industrial Automations",
+  description = "Industrial Automation, IIoT & Control Panel Solutions",
+} = Astro.props;
+---
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>{title}</title>
+    <meta name="description" content={description} />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="top-bar">
+        <span>📞 +91-XXXXXXXXXX</span>
+        <span>✉️ info@sgaautomations.com</span>
+      </div>
+
+      <nav class="nav">
+        <a href="/">Home</a>
+        <a href="/solutions">Solutions</a>
+        <a href="/industries">Industries</a>
+        <a href="/projects">Projects</a>
+        <a href="/about">About</a>
+        <a href="/contact">Contact</a>
+      </nav>
+    </header>
+
+    <main>
+      <slot />
+    </main>
+
+    <footer class="site-footer">
+      <p>© {new Date().getFullYear()} SGA Industrial Automations. All Rights Reserved.</p>
+    </footer>
+  </body>
+</html>
+
+<style>
+  body {
+    margin: 0;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+      sans-serif;
+    background: #f5f7fb;
+    color: #1b2533;
+  }
+
+  .top-bar {
+    background: #0b2b4c;
+    color: #ffffff;
+    font-size: 0.85rem;
+    padding: 6px 10%;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .nav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    padding: 1rem 10%;
+    background: #ffffff;
+    border-bottom: 1px solid #dde3ef;
+  }
+
+  .nav a {
+    text-decoration: none;
+    color: #1b2533;
+    font-weight: 500;
+  }
+
+  .nav a:hover {
+    text-decoration: underline;
+  }
+
+  main {
+    padding: 2rem 10%;
+    min-height: 70vh;
+  }
+
+  .site-footer {
+    text-align: center;
+    padding: 1.5rem 10%;
+    background: #0b2b4c;
+    color: #ffffff;
+    font-size: 0.9rem;
+  }
+
+  @media (max-width: 768px) {
+    main {
+      padding: 1.5rem 1.25rem;
+    }
+
+    .top-bar,
+    .nav,
+    .site-footer {
+      padding-inline: 1.25rem;
+    }
+  }
+</style>
