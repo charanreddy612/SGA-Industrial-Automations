@@ -1,25 +1,21 @@
-
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
 ---
 
 <BaseLayout
-  title="Contact Us | SGA Industrial Automations"
-  description="Get in touch with SGA Industrial Automations for industrial automation, IIoT solutions, control panels, and engineering support."
+  title="Contact | SGA Industrial Automations"
+  description="Contact SGA Industrial Automations in Hyderabad for industrial automation, IIoT, control panels and engineering support."
 >
-  <section class="hero">
-    <h1>Contact Us</h1>
-    <p>
-      We’d love to discuss your automation or industrial solution requirements. Reach out to us for
-      project inquiries, partnerships, and technical support.
-    </p>
+  <section class="page-header">
+    <h1>Contact</h1>
+    <p>SGA Industrial Automations</p>
   </section>
 
-  <section class="contact-container">
-    <div class="details-card">
-      <h2>Our Office</h2>
-
-      <p><strong>Address:</strong></p>
+  <section class="contact-grid">
+    <!-- Left: Office Details (like SR head office block) -->
+    <div class="contact-info">
+      <h2>Our Head Office</h2>
+      <p class="label">Address:</p>
       <p>
         Flat.no.101, R V Gayathri Arcade,<br />
         Gayatri Nagar, Godavari Homes,<br />
@@ -27,87 +23,190 @@ import BaseLayout from "../layouts/BaseLayout.astro";
         Telangana, India – 500055
       </p>
 
-      <p><strong>Phone:</strong></p>
-      <p>📞 <a href="tel:+917673902729">+91 76739 02729</a></p>
+      <p class="label">Phone:</p>
+      <p class="phone">
+        📞 <a href="tel:+917673902729">+91 76739 02729</a>
+      </p>
 
-      <p class="cta-note"><strong>Call us for more details</strong></p>
+      <p class="call-note"><strong>Call us for more details</strong></p>
 
-      <a class="cta-btn" href="tel:+917673902729">Call Now</a>
+      <a class="call-btn" href="tel:+917673902729">Call Now</a>
     </div>
 
-    <div class="map">
-      <iframe
-        loading="lazy"
-        referrerpolicy="no-referrer-when-downgrade"
-        src="https://www.google.com/maps/embed/v1/place?key=AIzaSyAFakeKeyForExample&q=Quthbullapur,Hyderabad"
-        allowfullscreen>
-      </iframe>
+    <!-- Right: Get In Touch form (static, no backend yet) -->
+    <div class="contact-form">
+      <h2>Get In Touch</h2>
+      <p>Share your requirement and we’ll get back to you.</p>
+
+      <form action="#" method="post">
+        <div class="field-row">
+          <div class="field">
+            <label for="name">Name</label>
+            <input id="name" name="name" type="text" placeholder="Your full name" required />
+          </div>
+          <div class="field">
+            <label for="email">Email</label>
+            <input id="email" name="email" type="email" placeholder="you@example.com" required />
+          </div>
+        </div>
+
+        <div class="field-row">
+          <div class="field">
+            <label for="phone">Phone</label>
+            <input id="phone" name="phone" type="tel" placeholder="+91 XXXXX XXXXX" />
+          </div>
+          <div class="field">
+            <label for="type">Enquiry Type</label>
+            <select id="type" name="type">
+              <option>Sales Enquiry</option>
+              <option>Service Enquiry</option>
+              <option>General Query</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="field">
+          <label for="message">Message</label>
+          <textarea
+            id="message"
+            name="message"
+            rows="4"
+            placeholder="Tell us briefly about your application, machine or plant..."
+          ></textarea>
+        </div>
+
+        <button type="submit" class="submit-btn">Send Message</button>
+      </form>
     </div>
   </section>
 </BaseLayout>
 
 <style>
-  .hero {
-    text-align: center;
-    margin-bottom: 2.5rem;
+  .page-header {
+    margin-bottom: 2rem;
   }
 
-  .hero h1 {
-    font-size: 2.4rem;
-    margin-bottom: 1rem;
+  .page-header h1 {
+    font-size: 2.2rem;
+    margin-bottom: 0.25rem;
   }
 
-  .hero p {
-    font-size: 1.05rem;
-    max-width: 720px;
-    margin: 0 auto;
-    line-height: 1.6;
+  .page-header p {
+    color: #6b7280;
+    margin: 0;
   }
 
-  .contact-container {
+  .contact-grid {
     display: grid;
-    grid-template-columns: minmax(0, 1fr) minmax(0, 1.3fr);
+    grid-template-columns: minmax(0, 1.1fr) minmax(0, 1.4fr);
     gap: 2rem;
-    align-items: start;
+    align-items: flex-start;
   }
 
-  .details-card {
+  .contact-info,
+  .contact-form {
     background: #ffffff;
-    padding: 1.5rem;
     border-radius: 16px;
+    padding: 1.75rem;
     box-shadow: 0 4px 18px rgba(15, 23, 42, 0.06);
   }
 
-  .details-card h2 {
+  .contact-info h2,
+  .contact-form h2 {
     margin-top: 0;
+    margin-bottom: 0.75rem;
   }
 
-  .cta-note {
-    margin-top: 1.2rem;
+  .label {
+    font-weight: 600;
+    margin-bottom: 0.25rem;
+    margin-top: 1rem;
+  }
+
+  .phone a {
+    text-decoration: none;
+    color: #0b2b4c;
+    font-weight: 600;
+  }
+
+  .call-note {
+    margin-top: 1.25rem;
     font-size: 1.05rem;
     color: #0b2b4c;
   }
 
-  .cta-btn {
+  .call-btn {
     display: inline-block;
-    margin-top: 1rem;
-    padding: 0.8rem 1.6rem;
+    margin-top: 0.75rem;
+    padding: 0.7rem 1.5rem;
+    border-radius: 999px;
     background: #0b2b4c;
     color: #ffffff;
-    border-radius: 999px;
-    font-weight: 600;
     text-decoration: none;
+    font-weight: 600;
   }
 
-  .map iframe {
+  .contact-form p {
+    margin-top: 0;
+    margin-bottom: 1.25rem;
+    color: #4b5563;
+  }
+
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .field-row {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 1rem;
+  }
+
+  .field label {
+    display: block;
+    font-size: 0.9rem;
+    margin-bottom: 0.35rem;
+    font-weight: 600;
+  }
+
+  .field input,
+  .field select,
+  .field textarea {
     width: 100%;
-    height: 350px;
-    border: none;
-    border-radius: 16px;
+    border-radius: 10px;
+    border: 1px solid #d1d5db;
+    padding: 0.55rem 0.75rem;
+    font: inherit;
+    background: #f9fafb;
   }
 
-  @media (max-width: 768px) {
-    .contact-container {
+  .field textarea {
+    resize: vertical;
+  }
+
+  .submit-btn {
+    margin-top: 0.5rem;
+    padding: 0.8rem 1.6rem;
+    border-radius: 999px;
+    border: none;
+    background: #0b2b4c;
+    color: #ffffff;
+    font-weight: 600;
+    cursor: pointer;
+  }
+
+  .submit-btn:hover {
+    opacity: 0.95;
+  }
+
+  @media (max-width: 900px) {
+    .contact-grid {
+      grid-template-columns: 1fr;
+    }
+
+    .field-row {
       grid-template-columns: 1fr;
     }
   }
