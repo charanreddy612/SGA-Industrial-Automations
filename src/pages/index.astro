@@ -14,9 +14,9 @@ import BaseLayout from "../layouts/BaseLayout.astro";
 
     <nav class="hidden md:flex gap-6 text-slate-200 text-sm">
       <a href="/" class="hover:text-cyan-400">Home</a>
-      <a href="#about" class="hover:text-cyan-400">About</a>
+      <a href="/about" class="hover:text-cyan-400">About</a>
       <a href="#services" class="hover:text-cyan-400">Services</a>
-      <a href="#training" class="hover:text-cyan-400">Training</a>
+      <a href="/training" class="hover:text-cyan-400">Training</a>
       <a href="#projects" class="hover:text-cyan-400">Projects</a>
       <a href="#contact" class="hover:text-cyan-400">Contact</a>
     </nav>
@@ -30,6 +30,8 @@ import BaseLayout from "../layouts/BaseLayout.astro";
 
 <!-- HERO -->
 <section class="max-w-7xl mx-auto px-4 py-16 grid md:grid-cols-2 gap-10 items-center">
+
+  <!-- TEXT -->
   <div>
     <p class="text-xs tracking-[0.3em] uppercase text-slate-400">
       Industry 4.0 • Automation • Digital Transformation
@@ -40,26 +42,71 @@ import BaseLayout from "../layouts/BaseLayout.astro";
     </h2>
 
     <p class="mt-4 text-slate-300 text-lg">
-      We enable industries to shift from manual, conventional systems to intelligent, connected and efficient operations through automation, IIoT and cutting-edge digital solutions.
+      We enable industries to transition from conventional systems to intelligent, connected and highly efficient operations through automation, IIoT and digital transformation solutions.
     </p>
+
+    <div class="mt-6 flex flex-wrap gap-3">
+      <span class="px-4 py-2 rounded-full border border-cyan-400 text-cyan-300 text-sm">
+        Since 2025
+      </span>
+
+      <span class="px-4 py-2 rounded-full border border-emerald-400 text-emerald-300 text-sm">
+        Team with 15+ years cumulative experience
+      </span>
+    </div>
 
     <div class="flex flex-wrap gap-4 mt-6">
       <a href="#contact" class="px-6 py-3 rounded-full bg-cyan-400 text-black font-semibold shadow">
         Request a Discussion
       </a>
+
       <a href="tel:+917673902729" class="px-6 py-3 rounded-full border border-slate-600 text-white">
         📞 +91 76739 02729
       </a>
     </div>
+
+    <div class="mt-6 flex flex-wrap gap-3 text-sm text-slate-300">
+      <span class="px-3 py-1 rounded-full border border-slate-700">Industry 4.0 & 5.0</span>
+      <span class="px-3 py-1 rounded-full border border-slate-700">IIoT & Smart Data</span>
+      <span class="px-3 py-1 rounded-full border border-slate-700">Energy Optimisation</span>
+    </div>
   </div>
 
-  <!-- Animated visual -->
+  <!-- FUTURISTIC ANIMATION -->
   <div class="relative aspect-square max-w-md mx-auto">
-    <div class="absolute inset-4 rounded-3xl border border-slate-700 animate-pulse"></div>
-    <div class="absolute inset-10 rounded-full border border-cyan-400 animate-spin-slow"></div>
-    <div class="absolute inset-20 rounded-full border border-indigo-500 animate-spin-slower"></div>
-    <div class="absolute inset-28 rounded-full bg-cyan-400/20 blur-xl"></div>
+    <div class="absolute inset-0 rounded-full bg-cyan-400/10 blur-3xl animate-pulse"></div>
+
+    <div class="absolute inset-6 rounded-full border border-cyan-400 animate-spin-slow"></div>
+
+    <div class="absolute inset-10 rounded-full border border-indigo-500 animate-spin-slower"></div>
+
+    <div class="absolute inset-16 ring-2 ring-cyan-400/40 rounded-full animate-ping"></div>
+
+    <div class="absolute inset-24 grid grid-cols-3 gap-2 opacity-60">
+      <div class="w-2 h-2 bg-cyan-400 rounded-full animate-bounce"></div>
+      <div class="w-2 h-2 bg-emerald-400 rounded-full animate-bounce delay-200"></div>
+      <div class="w-2 h-2 bg-indigo-400 rounded-full animate-bounce delay-500"></div>
+    </div>
   </div>
+</section>
+
+
+<!-- CLIENT LOGO STRIP -->
+<section class="max-w-7xl mx-auto px-4 py-10">
+  <p class="text-center text-slate-400 text-sm uppercase tracking-widest">
+    Trusted by forward-thinking industries
+  </p>
+
+  <div class="mt-6 grid grid-cols-2 md:grid-cols-6 gap-6 grayscale opacity-80">
+    <div class="h-10 bg-slate-800 rounded"></div>
+    <div class="h-10 bg-slate-800 rounded"></div>
+    <div class="h-10 bg-slate-800 rounded"></div>
+    <div class="h-10 bg-slate-800 rounded"></div>
+    <div class="h-10 bg-slate-800 rounded"></div>
+    <div class="h-10 bg-slate-800 rounded"></div>
+  </div>
+
+  <!-- Replace gray boxes above with logo images when ready -->
 </section>
 
 
@@ -67,34 +114,29 @@ import BaseLayout from "../layouts/BaseLayout.astro";
 <section id="about" class="max-w-7xl mx-auto px-4 py-12 grid md:grid-cols-2 gap-10">
   <div class="bg-slate-900/70 border border-slate-700 rounded-2xl p-6 shadow-xl">
     <p class="text-xs uppercase tracking-widest text-slate-400">About Us</p>
+
     <h3 class="text-2xl text-white font-semibold mt-1">
       A Premier Industry 4.0 System Integration Company
     </h3>
 
     <p class="text-slate-300 mt-3">
-      We combine deep conventional engineering expertise with advanced digital technologies to build intelligent automation ecosystems.
+      Founded in 2025, SGA Industrial Automations combines conventional engineering excellence with smart digital technologies to deliver end-to-end Industry 4.0 & 5.0 solutions.
     </p>
 
     <p class="text-slate-300 mt-3">
-      Our focus is on bridging Operational Technology (OT) with Information Technology (IT), enabling real-time data visibility, analytics and reliable decision-making.
+      Our team brings more than 15+ years of cumulative hands-on experience across automation, SCADA, control systems and industrial digitalization projects.
     </p>
-
-    <ul class="mt-4 text-slate-200 grid gap-2">
-      <li>✔ 15+ years practical experience</li>
-      <li>✔ Full-stack automation and digitalization</li>
-      <li>✔ Human-centric Industry 4.0 & 5.0 focus</li>
-    </ul>
   </div>
 
   <div class="grid gap-4">
     <div class="p-5 rounded-2xl border border-slate-700 bg-slate-900/60">
       <h4 class="text-white font-semibold">OT + IT Convergence</h4>
-      <p class="text-slate-300">Connecting machines with enterprise systems.</p>
+      <p class="text-slate-300">Connecting machines with enterprise platforms.</p>
     </div>
 
     <div class="p-5 rounded-2xl border border-slate-700 bg-slate-900/60">
-      <h4 class="text-white font-semibold">Energy & Operational Efficiency</h4>
-      <p class="text-slate-300">Automation designed for sustainability.</p>
+      <h4 class="text-white font-semibold">Sustainable Engineering</h4>
+      <p class="text-slate-300">Improving energy usage and operational efficiency.</p>
     </div>
   </div>
 </section>
@@ -116,19 +158,19 @@ import BaseLayout from "../layouts/BaseLayout.astro";
     </div>
 
     <div class="p-6 rounded-2xl border border-slate-700 bg-slate-900/60">
-      <h4 class="text-white font-semibold">IIoT & Digitalization</h4>
+      <h4 class="text-white font-semibold">IIoT & Data Visibility</h4>
       <ul class="text-slate-300 mt-2">
-        <li>• OEE dashboards</li>
-        <li>• Energy monitoring</li>
-        <li>• Cloud analytics</li>
+        <li>• OEE analytics</li>
+        <li>• Energy dashboards</li>
+        <li>• Cloud connectivity</li>
       </ul>
     </div>
 
     <div class="p-6 rounded-2xl border border-slate-700 bg-slate-900/60">
-      <h4 class="text-white font-semibold">Control Panels</h4>
+      <h4 class="text-white font-semibold">Control Panel Engineering</h4>
       <ul class="text-slate-300 mt-2">
-        <li>• MCC / PCC / PLC panels</li>
-        <li>• Design & documentation</li>
+        <li>• MCC / PCC / PLC / VFD panels</li>
+        <li>• Design & schematics</li>
         <li>• Commissioning & service</li>
       </ul>
     </div>
@@ -139,22 +181,22 @@ import BaseLayout from "../layouts/BaseLayout.astro";
 <!-- TRAINING -->
 <section id="training" class="max-w-7xl mx-auto px-4 py-12">
   <h3 class="text-3xl text-white font-bold">Training & Internship Programs</h3>
-  <p class="text-slate-400">Hands-on programs designed by industry experts.</p>
+  <p class="text-slate-400">Real-time, industry-oriented learning pathways.</p>
 
   <div class="grid md:grid-cols-3 gap-6 mt-6">
     <div class="p-6 rounded-2xl border border-slate-700 bg-slate-900/60">
       <h4 class="text-white font-semibold">PLC & SCADA Training</h4>
-      <p class="text-slate-300">Real industrial PLCs and live projects.</p>
+      <p class="text-slate-300">Hands-on with real industrial PLCs.</p>
     </div>
 
     <div class="p-6 rounded-2xl border border-slate-700 bg-slate-900/60">
       <h4 class="text-white font-semibold">Industrial Automation Internship</h4>
-      <p class="text-slate-300">Factory-oriented hands-on exposure.</p>
+      <p class="text-slate-300">Live projects with expert mentoring.</p>
     </div>
 
     <div class="p-6 rounded-2xl border border-slate-700 bg-slate-900/60">
       <h4 class="text-white font-semibold">IIoT & Digitalization Program</h4>
-      <p class="text-slate-300">Data, dashboards and cloud integration.</p>
+      <p class="text-slate-300">Dashboards, data and cloud integration.</p>
     </div>
   </div>
 </section>
@@ -163,31 +205,40 @@ import BaseLayout from "../layouts/BaseLayout.astro";
 <!-- PROJECTS -->
 <section id="projects" class="max-w-7xl mx-auto px-4 py-12">
   <h3 class="text-3xl text-white font-bold">Projects & Case Studies</h3>
-  <p class="text-slate-400">Practical deployments that delivered measurable results.</p>
+  <p class="text-slate-400">Deployments that delivered measurable results.</p>
 
   <div class="grid md:grid-cols-3 gap-6 mt-6">
     <div class="p-6 rounded-2xl border border-slate-700 bg-slate-900/60">
       <h4 class="text-white font-semibold">OEE Implementation</h4>
-      <p class="text-slate-300">Increased productivity by 18% in a packaging line.</p>
+      <p class="text-slate-300">Improved packaging line productivity by 18%.</p>
     </div>
 
     <div class="p-6 rounded-2xl border border-slate-700 bg-slate-900/60">
-      <h4 class="text-white font-semibold">Energy Monitoring System</h4>
-      <p class="text-slate-300">Reduced power consumption by 22%.</p>
+      <h4 class="text-white font-semibold">Energy Monitoring</h4>
+      <p class="text-slate-300">Reduced plant energy consumption by 22%.</p>
     </div>
 
     <div class="p-6 rounded-2xl border border-slate-700 bg-slate-900/60">
-      <h4 class="text-white font-semibold">Machine Retrofit Project</h4>
-      <p class="text-slate-300">Upgraded legacy systems to Industry 4.0 ready.</p>
+      <h4 class="text-white font-semibold">Legacy Machine Retrofit</h4>
+      <p class="text-slate-300">Converted conventional systems to smart assets.</p>
     </div>
   </div>
 </section>
 
 
+<!-- WHATSAPP FLOAT BUTTON -->
+<a
+  href="https://wa.me/917673902729"
+  class="fixed bottom-6 right-6 bg-emerald-500 text-white w-14 h-14 rounded-full flex items-center justify-center shadow-xl hover:scale-110 transition"
+  aria-label="Chat on WhatsApp"
+>
+  💬
+</a>
+
+
 <!-- FOOTER -->
 <footer id="contact" class="mt-16 py-10 bg-slate-950 border-t border-slate-800">
   <div class="max-w-7xl mx-auto px-4 grid md:grid-cols-3 gap-6 text-slate-300">
-
     <div>
       <h4 class="text-white font-bold text-lg">SGA Industrial Automations</h4>
       <p>Engineering Efficiency. Delivering Sustainability.</p>
