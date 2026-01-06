@@ -3,114 +3,298 @@ import BaseLayout from "../layouts/BaseLayout.astro";
 ---
 
 <BaseLayout
-  title="SGA Industrial Automations | Powering the Future of Industrial Automation"
-  description="Industry 4.0 automation, IIoT dashboards, SCADA, control panels, energy monitoring and digital transformation solutions for factories and process industries."
+  title="SGA Industrial Automations | Industry 4.0, Automation, IIoT, SCADA & Control Panels"
+  description="SGA Industrial Automations delivers Industry 4.0 automation, PLC & SCADA systems, IIoT dashboards, smart control panels, energy optimization solutions and industrial training programs."
 >
 
+<!-- ================= PARTICLE BACKGROUND ================= -->
+<canvas id="particles"></canvas>
+
+<!-- ================= HERO ================= -->
 <section class="hero-wrap">
+  <div class="hero-layout">
 
-  <div class="hero-grid">
+    <!-- LEFT -->
+    <div class="hero-left">
 
-    <!-- ===== LEFT HERO TEXT ===== -->
-    <div>
-      <p class="eyebrow">INDUSTRIAL AUTOMATION • IIOT • CONTROL PANELS</p>
+      <p class="eyebrow">INDUSTRIAL AUTOMATION • IIOT • SCADA • CONTROL PANELS</p>
 
       <h1 class="hero-title">
-        Powering the Future of Industrial Automation
+        Powering the Future of<br />
+        <span class="grad">Industrial Automation</span>
       </h1>
 
       <p class="hero-sub">
-        We help factories automate, connect and optimize their machines with PLC, SCADA, IIoT and intelligent
-        control panels — giving real-time visibility into performance and energy usage.
+        We automate, connect and digitize factories with PLC, SCADA, IIoT and intelligent control systems —
+        delivering real-time visibility of production, downtime and energy.
       </p>
 
-      <div class="hero-cta">
-        <a class="btn-primary" href="/contact">
-          ⚡ Request a Project Discussion
-        </a>
-
-        <a class="btn-ghost" href="tel:+917673902729">
-          📞 +91 76739 02729
-        </a>
+      <div class="cta-row">
+        <a href="#contact" class="btn-primary">⚡ Request a Project Discussion</a>
+        <a href="tel:+917673902729" class="btn-outline">📞 +91 76739 02729</a>
       </div>
 
-      <div class="chip-row">
-        <span class="chip">Machine Automation</span>
-        <span class="chip">SCADA & IIoT Dashboards</span>
-        <span class="chip">Energy & Utility Monitoring</span>
+      <div class="tag-row">
+        <span class="tag">Machine Automation</span>
+        <span class="tag">IIoT Dashboards</span>
+        <span class="tag">Energy Monitoring</span>
       </div>
     </div>
 
-    <!-- ===== RIGHT HERO VISUAL ===== -->
-    <div class="glass-orb">
-      <div class="orb-ring"></div>
-      <div class="orb-ring inner"></div>
+    <!-- RIGHT futuristic orbit -->
+    <div class="hero-visual">
+      <div class="orbit-layer outer"></div>
+      <div class="orbit-layer middle"></div>
+      <div class="orbit-core"></div>
 
-      <div class="floating-card top">OEE 92.4%</div>
-      <div class="floating-card right">Energy −18%</div>
-      <div class="floating-card bottom green">All Lines Online</div>
+      <div class="kpi-card top">OEE 92.4%</div>
+      <div class="kpi-card right">Energy −18%</div>
+      <div class="kpi-card bottom green">All Lines Online</div>
     </div>
 
   </div>
 </section>
 
-<!-- ===== GLASS FEATURE STRIP ===== -->
-<section class="glass-strip">
-  <div class="glass-card">
-    <h3>End-to-End Industrial Automation</h3>
-    <p>From PLC programming & SCADA to panel manufacturing & site commissioning.</p>
+<!-- ================= ANIMATED COUNTERS ================= -->
+<section class="counter-wrap">
+  <div class="counter">
+    <span class="num" data-val="15">0</span>+
+    <p>Years Team Experience</p>
   </div>
 
-  <div class="glass-card">
-    <h3>PLC • SCADA • IIoT</h3>
-    <p>Integrated architecture tailored to your machines and process.</p>
+  <div class="counter">
+    <span class="num" data-val="120">0</span>+
+    <p>Completed Projects</p>
   </div>
 
-  <div class="glass-card">
-    <h3>Panels & Retrofits</h3>
-    <p>MCC, PCC, PLC & VFD panel solutions with neat wiring standards.</p>
+  <div class="counter">
+    <span class="num" data-val="40">0</span>+
+    <p>Industrial Clients</p>
   </div>
 
-  <div class="glass-card">
-    <h3>Data & Energy</h3>
-    <p>Real-time analytics from shop-floor to top-floor.</p>
+  <div class="counter">
+    <span class="num" data-val="12">0</span>+
+    <p>Industry Segments</p>
   </div>
 </section>
+
+<!-- ================= OUR CLIENTS ================= -->
+<section class="clients-wrap">
+  <h2>Trusted by Industry Leaders</h2>
+
+  <div class="logo-grid">
+    <div class="logo-box">Client 1</div>
+    <div class="logo-box">Client 2</div>
+    <div class="logo-box">Client 3</div>
+    <div class="logo-box">Client 4</div>
+    <div class="logo-box">Client 5</div>
+    <div class="logo-box">Client 6</div>
+  </div>
+</section>
+
+<!-- ================= ABOUT ================= -->
+<section id="about" class="about-wrap">
+  <div class="about-card">
+
+    <p class="eyebrow">ABOUT SGA</p>
+
+    <h2 class="about-title">
+      Turning Complex Industrial Problems<br />
+      into Elegant Automated Systems
+    </h2>
+
+    <p class="about-body">
+      SGA Industrial Automations was founded with the belief that automation should not complicate operations —
+      it should make machines <strong>intelligent, visible and responsive</strong>.
+    </p>
+
+    <p class="about-body">
+      Our engineers bring <strong>15+ years of cumulative experience</strong> spanning discrete & process industries,
+      brownfield retrofits, SCADA systems, PLC logic optimisation, commissioning and IIoT deployments.
+    </p>
+
+    <p class="about-body">
+      What sets us apart is deep subject knowledge: controls, sensors, communication protocols, drives,
+      energy systems and enterprise integration. We are not just integrators — we are
+      <strong>problem solvers</strong> who understand the shop-floor, maintenance challenges and business expectations.
+    </p>
+
+    <div class="about-facts">
+      <div class="fact"><strong>Since 2025</strong><span>Registered company</span></div>
+      <div class="fact"><strong>15+ Years</strong><span>Cumulative team expertise</span></div>
+      <div class="fact"><strong>OT + IT</strong><span>True Industry 4.0 mindset</span></div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ================= CASE STUDIES ================= -->
+<section class="case-wrap">
+  <h2>Case Studies</h2>
+
+  <div class="case-grid">
+    <div class="case-card">
+      <h3>Packaging Line OEE Improvement</h3>
+      <p>Implemented OEE + downtime analytics and increased productivity by 18%.</p>
+    </div>
+
+    <div class="case-card">
+      <h3>Energy Monitoring System</h3>
+      <p>Deployed power & utility dashboards and achieved significant energy savings.</p>
+    </div>
+
+    <div class="case-card">
+      <h3>Legacy Machine Retrofit</h3>
+      <p>Converted conventional systems into IIoT-enabled smart equipment.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ================= TRAINING PROGRAMS ================= -->
+<section class="training-wrap">
+  <h2>Industrial Training Programs</h2>
+
+  <div class="price-grid">
+
+    <div class="price-card">
+      <h3>PLC & SCADA Training</h3>
+      <p>Hands-on industrial controllers</p>
+      <strong>₹ Enquire</strong>
+    </div>
+
+    <div class="price-card highlighted">
+      <h3>Industrial Automation Internship</h3>
+      <p>Live projects + commissioning exposure</p>
+      <strong>₹ Enquire</strong>
+    </div>
+
+    <div class="price-card">
+      <h3>IIoT & Smart Manufacturing</h3>
+      <p>Dashboards, analytics & cloud</p>
+      <strong>₹ Enquire</strong>
+    </div>
+
+  </div>
+</section>
+
+<!-- ================= CONTACT FORM ================= -->
+<section id="contact" class="contact-wrap">
+  <h2>Request a Discussion</h2>
+
+  <form class="contact-form">
+    <input placeholder="Your Name" required />
+    <input placeholder="Email" required />
+    <input placeholder="Phone" required />
+    <textarea placeholder="Tell us about your requirement"></textarea>
+    <button type="submit">Submit</button>
+  </form>
+</section>
+
+<!-- ================= WHATSAPP BUTTON ================= -->
+<a href="https://wa.me/917673902729" class="wa-btn">💬</a>
+
+<!-- ================= JSON-LD SCHEMA ================= -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "SGA Industrial Automations",
+  "url": "https://sgaautomations.com",
+  "logo": "https://sgaautomations.com/logo.png",
+  "sameAs": [],
+  "address": {
+    "@type": "PostalAddress",
+    "addressCountry": "IN"
+  }
+}
+</script>
+
+<!-- ================= SCRIPTS ================= -->
+<script>
+/* Particle Background */
+const c = document.getElementById("particles");
+const ctx = c.getContext("2d");
+c.height = window.innerHeight; c.width = window.innerWidth;
+let arr = []; for(let i=0;i<120;i++) arr.push({x:Math.random()*c.width,y:Math.random()*c.height,dx:(Math.random()-0.5),dy:(Math.random()-0.5)})
+function animate(){ctx.clearRect(0,0,c.width,c.height);ctx.fillStyle="#38bdf8";arr.forEach(p=>{ctx.fillRect(p.x,p.y,2,2);p.x+=p.dx;p.y+=p.dy;if(p.x<0||p.x>c.width)p.dx*=-1;if(p.y<0||p.y>c.height)p.dy*=-1});requestAnimationFrame(animate);} animate();
+
+/* Counter Animation */
+const counters=document.querySelectorAll(".num");
+counters.forEach(el=>{let start=0,end=parseInt(el.getAttribute("data-val"));let dur=30;let c=setInterval(()=>{start+=1;el.textContent=start;if(start==end)clearInterval(c)},dur);});
+</script>
 
 <style>
-.hero-wrap {padding: 3.5rem 0;}
-.hero-grid {max-width: 1150px;margin:auto;display:grid;grid-template-columns:1.2fr 1fr;gap:2.2rem;align-items:center;}
-.eyebrow {letter-spacing:.18em;color:#8ea0c4;font-size:.8rem;margin-bottom:.4rem;}
-.hero-title {font-size:2.8rem;line-height:1.1;margin:.4rem 0 0.4rem;}
-.hero-sub {color:#cfd4e4;font-size:1.05rem;max-width:36rem;}
-.hero-cta {display:flex;gap:.6rem;margin-top:1.1rem;flex-wrap:wrap;}
+body{background:#020617;color:white;margin:0}
 
-.btn-primary {background: radial-gradient(circle at top left,#22d3ee,#0ea5e9 40%,#4f46e5);padding:.85rem 1.5rem;border-radius:999px;font-weight:700;box-shadow:0 0 18px rgba(34,211,238,.6);text-decoration:none;color:#020617;}
-.btn-ghost {border:1px solid #475569;padding:.85rem 1.5rem;border-radius:999px;text-decoration:none;color:white;background:#020617aa;}
-.chip-row{display:flex;gap:.45rem;flex-wrap:wrap;margin-top:1rem;}
-.chip{padding:.35rem .75rem;border-radius:999px;border:1px solid #334155;background:#020617b0;color:#d1d5db;font-size:.82rem;}
+/* Particle canvas */
+#particles{position:fixed;inset:0;z-index:-1}
 
-.glass-orb{position:relative;aspect-ratio:1/1;border-radius:50%;background:radial-gradient(circle at center,#0b1222,#020617 70%);border:1px solid #475569;box-shadow:0 0 45px #0ea5e977;}
-.orb-ring{position:absolute;inset:12%;border-radius:50%;border:1px dashed #4f46e5;}
-.orb-ring.inner{inset:26%;border:1px solid #22d3ee;box-shadow:0 0 18px #22d3eeaa;}
+/* HERO */
+.hero-wrap{padding:4rem 0}
+.hero-layout{max-width:1180px;margin:auto;display:grid;grid-template-columns:1.25fr 1fr;gap:2.5rem;align-items:center}
+.eyebrow{letter-spacing:.18em;color:#8FA3C8;font-size:.8rem}
+.hero-title{font-size:3rem;line-height:1.05}
+.grad{background:linear-gradient(90deg,#38bdf8,#818cf8);-webkit-background-clip:text;color:transparent}
+.hero-sub{color:#cfd6e8;max-width:36rem}
+.cta-row{display:flex;gap:.6rem;margin-top:1.1rem;flex-wrap:wrap}
+.btn-primary{background:radial-gradient(circle at top left,#22d3ee,#0ea5e9 40%,#4f46e5);padding:.9rem 1.6rem;border-radius:999px;color:#020617;font-weight:700;text-decoration:none}
+.btn-outline{border:1px solid #64748b;padding:.9rem 1.6rem;border-radius:999px;text-decoration:none;color:white}
+.tag-row{display:flex;gap:.45rem;margin-top:1rem;flex-wrap:wrap}
+.tag{padding:.35rem .7rem;border-radius:999px;border:1px solid #334155}
 
-.floating-card{position:absolute;padding:.45rem .7rem;border-radius:14px;background:#020617dd;border:1px solid #38bdf8;font-size:.8rem;box-shadow:0 0 16px #38bdf866;backdrop-filter:blur(10px);}
-.top{top:6%;left:6%}
-.right{top:28%;right:-6%}
-.bottom{bottom:6%;left:18%}
-.green{border-color:#22c55e;color:#bbf7d0}
+/* hero visual */
+.hero-visual{position:relative;aspect-ratio:1/1;max-width:460px;margin:auto}
+.orbit-layer{position:absolute;inset:4%;border-radius:50%;box-shadow:0 0 55px #38bdf855}
+.outer{border:1px solid #4f46e5}
+.middle{inset:16%;border:1px dashed #38bdf8}
+.orbit-core{position:absolute;inset:32%;border-radius:50%;background:radial-gradient(circle,#22d3ee33,#020617 70%)}
+.kpi-card{position:absolute;background:#020617dd;border:1px solid #38bdf8;border-radius:14px;padding:.45rem .65rem}
+.top{top:4%;left:4%} .right{top:28%;right:-8%} .bottom{bottom:6%;left:18%}
+.green{border-color:#22c55e}
 
-.glass-strip{max-width:1150px;margin:2.2rem auto;display:grid;grid-template-columns:repeat(4,1fr);gap:1rem;}
-.glass-card{background:#020617d9;border:1px solid #1e293b;border-radius:20px;padding:1.1rem;box-shadow:0 25px 45px #0009;}
-.glass-card h3{margin:0 0 .25rem}
-.glass-card p{margin:0;color:#cdd4e4;font-size:.9rem}
+/* counters */
+.counter-wrap{max-width:1150px;margin:1.8rem auto;display:grid;grid-template-columns:repeat(4,1fr);gap:1rem}
+.counter{text-align:center;background:#020617cc;border:1px solid #1f2937;border-radius:18px;padding:1rem}
+.counter .num{font-size:2rem;color:#38bdf8}
 
-@media(max-width:960px){
-.hero-grid{grid-template-columns:1fr}
-.glass-strip{grid-template-columns:1fr 1fr}
-}
-@media(max-width:640px){
-.glass-strip{grid-template-columns:1fr}
+/* clients */
+.clients-wrap{text-align:center;padding:2.8rem 0}
+.logo-grid{display:grid;grid-template-columns:repeat(6,1fr);gap:.8rem;max-width:1100px;margin:auto}
+.logo-box{height:50px;border-radius:12px;border:1px solid #1f2937;background:#020617dd}
+
+/* about */
+.about-wrap{padding:2.6rem 0}
+.about-card{max-width:980px;margin:auto;background:#020617f2;border:1px solid #1f2937;border-radius:22px;padding:2rem;box-shadow:0 40px 90px #0008}
+.about-title{font-size:2.2rem}
+.about-facts{display:flex;gap:1rem;flex-wrap:wrap;margin-top:1rem}
+.fact{background:#020617dd;border:1px solid #334155;border-radius:16px;padding:.8rem 1.2rem}
+
+/* cases */
+.case-wrap{max-width:1180px;margin:auto;padding:2.5rem 0}
+.case-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1rem}
+.case-card{background:#020617dd;border:1px solid #1f2937;border-radius:18px;padding:1rem}
+
+/* training */
+.training-wrap{text-align:center;padding:2.5rem 0}
+.price-grid{max-width:1000px;margin:auto;display:grid;grid-template-columns:repeat(3,1fr);gap:1rem}
+.price-card{background:#020617ee;border:1px solid #1f2937;border-radius:18px;padding:1.2rem}
+.highlighted{box-shadow:0 0 30px #38bdf855}
+
+/* contact */
+.contact-wrap{text-align:center;padding:2.5rem 0}
+.contact-form{max-width:600px;margin:auto;display:grid;gap:.7rem}
+input,textarea{padding:.8rem;border-radius:12px;border:1px solid #1f2937;background:#020617cc;color:white}
+button{padding:.9rem;border-radius:999px;background:#22d3ee;color:#020617;font-weight:800;border:0}
+
+/* whatsapp */
+.wa-btn{position:fixed;right:18px;bottom:18px;background:#22c55e;width:58px;height:58px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:22px}
+
+@media(max-width:900px){
+.hero-layout{grid-template-columns:1fr}
+.case-grid{grid-template-columns:1fr}
+.price-grid{grid-template-columns:1fr}
+.logo-grid{grid-template-columns:repeat(3,1fr)}
+.counter-wrap{grid-template-columns:repeat(2,1fr)}
 }
 </style>
 
