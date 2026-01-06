@@ -3,741 +3,213 @@ import BaseLayout from "../layouts/BaseLayout.astro";
 ---
 
 <BaseLayout
-  title="SGA Industrial Automations | Powering the Future of Industrial Automation"
-  description="SGA Industrial Automations delivers turnkey industrial automation, IIoT, SCADA and control panel solutions for factories and process industries."
+  title="SGA Industrial Automations | Industry 4.0 & Digital Transformation Specialists"
+  description="SGA Industrial Automations delivers Industry 4.0 automation, IIoT, SCADA, control panels, training programs and smart industrial digital transformation."
 >
-  <section class="hero">
-    <div class="hero-text">
-      <p class="eyebrow">INDUSTRIAL AUTOMATION • IIOT • CONTROL PANELS</p>
-      <h1>Powering the Future of Industrial Automation</h1>
-      <p class="sub">
-        We help factories and process plants automate, connect and optimize their machines with PLC, SCADA,
-        IIoT and intelligent control panels — with real-time visibility into performance.
-      </p>
 
-      <div class="hero-actions">
-        <a href="/contact" class="btn btn-primary">
-          <span class="btn-icon">⚡</span>
-          <span>Request a Project Discussion</span>
-        </a>
-        <a href="tel:+917673902729" class="btn btn-ghost">
-          <span class="btn-icon">📞</span>
-          <span>Call Now: +91 76739 02729</span>
-        </a>
-      </div>
+<!-- NAVBAR -->
+<header class="w-full py-4 sticky top-0 z-50 bg-slate-950/80 backdrop-blur border-b border-slate-800">
+  <div class="max-w-7xl mx-auto px-4 flex items-center justify-between">
+    <h1 class="text-xl font-bold text-cyan-400">SGA Industrial Automations</h1>
 
-      <div class="hero-meta">
-        <div class="meta-chip">
-          <span class="dot dot-green"></span>
-          <span>Machine Automation</span>
-        </div>
-        <div class="meta-chip">
-          <span class="dot dot-blue"></span>
-          <span>SCADA & IIoT Dashboards</span>
-        </div>
-        <div class="meta-chip">
-          <span class="dot dot-amber"></span>
-          <span>Energy & Utility Monitoring</span>
-        </div>
-      </div>
+    <nav class="hidden md:flex gap-6 text-slate-200 text-sm">
+      <a href="/" class="hover:text-cyan-400">Home</a>
+      <a href="#about" class="hover:text-cyan-400">About</a>
+      <a href="#services" class="hover:text-cyan-400">Services</a>
+      <a href="#training" class="hover:text-cyan-400">Training</a>
+      <a href="#projects" class="hover:text-cyan-400">Projects</a>
+      <a href="#contact" class="hover:text-cyan-400">Contact</a>
+    </nav>
+
+    <a href="tel:+917673902729" class="hidden md:inline-flex px-4 py-2 rounded-full bg-cyan-400 text-black font-semibold">
+      Call: +91 76739 02729
+    </a>
+  </div>
+</header>
+
+
+<!-- HERO -->
+<section class="max-w-7xl mx-auto px-4 py-16 grid md:grid-cols-2 gap-10 items-center">
+  <div>
+    <p class="text-xs tracking-[0.3em] uppercase text-slate-400">
+      Industry 4.0 • Automation • Digital Transformation
+    </p>
+
+    <h2 class="text-4xl md:text-5xl font-bold mt-2 text-white">
+      Bridging Conventional Engineering with the Future of Technology
+    </h2>
+
+    <p class="mt-4 text-slate-300 text-lg">
+      We enable industries to shift from manual, conventional systems to intelligent, connected and efficient operations through automation, IIoT and cutting-edge digital solutions.
+    </p>
+
+    <div class="flex flex-wrap gap-4 mt-6">
+      <a href="#contact" class="px-6 py-3 rounded-full bg-cyan-400 text-black font-semibold shadow">
+        Request a Discussion
+      </a>
+      <a href="tel:+917673902729" class="px-6 py-3 rounded-full border border-slate-600 text-white">
+        📞 +91 76739 02729
+      </a>
+    </div>
+  </div>
+
+  <!-- Animated visual -->
+  <div class="relative aspect-square max-w-md mx-auto">
+    <div class="absolute inset-4 rounded-3xl border border-slate-700 animate-pulse"></div>
+    <div class="absolute inset-10 rounded-full border border-cyan-400 animate-spin-slow"></div>
+    <div class="absolute inset-20 rounded-full border border-indigo-500 animate-spin-slower"></div>
+    <div class="absolute inset-28 rounded-full bg-cyan-400/20 blur-xl"></div>
+  </div>
+</section>
+
+
+<!-- ABOUT -->
+<section id="about" class="max-w-7xl mx-auto px-4 py-12 grid md:grid-cols-2 gap-10">
+  <div class="bg-slate-900/70 border border-slate-700 rounded-2xl p-6 shadow-xl">
+    <p class="text-xs uppercase tracking-widest text-slate-400">About Us</p>
+    <h3 class="text-2xl text-white font-semibold mt-1">
+      A Premier Industry 4.0 System Integration Company
+    </h3>
+
+    <p class="text-slate-300 mt-3">
+      We combine deep conventional engineering expertise with advanced digital technologies to build intelligent automation ecosystems.
+    </p>
+
+    <p class="text-slate-300 mt-3">
+      Our focus is on bridging Operational Technology (OT) with Information Technology (IT), enabling real-time data visibility, analytics and reliable decision-making.
+    </p>
+
+    <ul class="mt-4 text-slate-200 grid gap-2">
+      <li>✔ 15+ years practical experience</li>
+      <li>✔ Full-stack automation and digitalization</li>
+      <li>✔ Human-centric Industry 4.0 & 5.0 focus</li>
+    </ul>
+  </div>
+
+  <div class="grid gap-4">
+    <div class="p-5 rounded-2xl border border-slate-700 bg-slate-900/60">
+      <h4 class="text-white font-semibold">OT + IT Convergence</h4>
+      <p class="text-slate-300">Connecting machines with enterprise systems.</p>
     </div>
 
-    <div class="hero-visual">
-      <div class="grid-orbit"></div>
-
-      <div class="robotic-core">
-        <div class="ring ring-outer"></div>
-        <div class="ring ring-middle"></div>
-        <div class="ring ring-inner"></div>
-
-        <div class="robotic-arm">
-          <div class="arm-base"></div>
-          <div class="arm-segment arm-seg-1"></div>
-          <div class="arm-segment arm-seg-2"></div>
-          <div class="arm-head"></div>
-        </div>
-
-        <div class="spark spark-1"></div>
-        <div class="spark spark-2"></div>
-        <div class="spark spark-3"></div>
-
-        <div class="holo-card holo-top">
-          <p class="holo-label">OEE</p>
-          <p class="holo-value">92.4%</p>
-          <span class="holo-pill">Live Machine Data</span>
-        </div>
-
-        <div class="holo-card holo-right">
-          <p class="holo-label">Energy</p>
-          <p class="holo-value">−18%</p>
-          <span class="holo-pill">Optimized Usage</span>
-        </div>
-
-        <div class="holo-card holo-bottom">
-          <p class="holo-label">Status</p>
-          <p class="holo-value">All Lines: Online</p>
-          <span class="holo-pill pill-green">Healthy</span>
-        </div>
-      </div>
+    <div class="p-5 rounded-2xl border border-slate-700 bg-slate-900/60">
+      <h4 class="text-white font-semibold">Energy & Operational Efficiency</h4>
+      <p class="text-slate-300">Automation designed for sustainability.</p>
     </div>
-  </section>
+  </div>
+</section>
 
-  <section class="section stats">
-    <div class="stat-card">
-      <span class="stat-label">What We Deliver</span>
-      <h2>End-to-End Industrial Automation</h2>
-      <p>
-        From PLC programming and SCADA to panel manufacturing and on-site commissioning, we design and deliver
-        complete automation solutions for OEMs and plants.
-      </p>
+
+<!-- SERVICES -->
+<section id="services" class="max-w-7xl mx-auto px-4 py-12">
+  <h3 class="text-3xl text-white font-bold">Our Core Expertise</h3>
+  <p class="text-slate-400">End-to-end automation and digital transformation solutions.</p>
+
+  <div class="grid md:grid-cols-3 gap-6 mt-6">
+    <div class="p-6 rounded-2xl border border-slate-700 bg-slate-900/60">
+      <h4 class="text-white font-semibold">Industrial Automation</h4>
+      <ul class="text-slate-300 mt-2">
+        <li>• PLC & HMI programming</li>
+        <li>• Machine & line automation</li>
+        <li>• Retrofits & upgrades</li>
+      </ul>
     </div>
 
-    <div class="stat-grid">
-      <div class="stat-mini">
-        <p class="stat-number">PLC • SCADA • IIoT</p>
-        <p class="stat-text">Integrated control & monitoring architecture tailored to your process.</p>
-      </div>
-      <div class="stat-mini">
-        <p class="stat-number">Panels & Retrofits</p>
-        <p class="stat-text">New builds & upgrades for MCC, PCC, PLC, VFD panels and field retrofits.</p>
-      </div>
-      <div class="stat-mini">
-        <p class="stat-number">Data & Energy</p>
-        <p class="stat-text">Dashboards for downtime, OEE and energy — from shop floor to top floor.</p>
-      </div>
-    </div>
-  </section>
-
-  <section class="section section-cards">
-    <div class="section-header">
-      <h2>Key Solutions</h2>
-      <p>Designed for real-world machines, lines and plants — not just theory.</p>
+    <div class="p-6 rounded-2xl border border-slate-700 bg-slate-900/60">
+      <h4 class="text-white font-semibold">IIoT & Digitalization</h4>
+      <ul class="text-slate-300 mt-2">
+        <li>• OEE dashboards</li>
+        <li>• Energy monitoring</li>
+        <li>• Cloud analytics</li>
+      </ul>
     </div>
 
-    <div class="cards-grid">
-      <article class="card">
-        <h3>Machine & Line Automation</h3>
-        <p>
-          PLC, HMI, servo and VFD based automation for packaging, assembly, material handling, utilities
-          and process skids.
-        </p>
-        <ul>
-          <li>PLC & HMI programming</li>
-          <li>Retrofit for legacy machines</li>
-          <li>Safety & interlock logic</li>
-        </ul>
-        <a href="/solutions#industrial-automation" class="card-link">Explore machine automation →</a>
-      </article>
-
-      <article class="card">
-        <h3>IIoT & Remote Monitoring</h3>
-        <p>
-          Connect machines and panels to secure cloud dashboards to view performance KPIs from anywhere.
-        </p>
-        <ul>
-          <li>OEE & downtime analytics</li>
-          <li>Energy & utility dashboards</li>
-          <li>Alarms, alerts & reports</li>
-        </ul>
-        <a href="/solutions#iiot" class="card-link">Explore IIoT & data →</a>
-      </article>
-
-      <article class="card">
-        <h3>Control Panel Engineering</h3>
-        <p>
-          MCC, PCC, PLC, VFD and control desks engineered as per standards with neat wiring & documentation.
-        </p>
-        <ul>
-          <li>Design, GA & schematics</li>
-          <li>Wiring, testing & trials</li>
-          <li>On-site integration</li>
-        </ul>
-        <a href="/solutions#panels" class="card-link">Explore panels →</a>
-      </article>
+    <div class="p-6 rounded-2xl border border-slate-700 bg-slate-900/60">
+      <h4 class="text-white font-semibold">Control Panels</h4>
+      <ul class="text-slate-300 mt-2">
+        <li>• MCC / PCC / PLC panels</li>
+        <li>• Design & documentation</li>
+        <li>• Commissioning & service</li>
+      </ul>
     </div>
-  </section>
+  </div>
+</section>
 
-  <section class="section industries">
-    <div class="section-header">
-      <h2>Industries We Support</h2>
-      <p>Built for high-uptime environments where every minute of downtime matters.</p>
+
+<!-- TRAINING -->
+<section id="training" class="max-w-7xl mx-auto px-4 py-12">
+  <h3 class="text-3xl text-white font-bold">Training & Internship Programs</h3>
+  <p class="text-slate-400">Hands-on programs designed by industry experts.</p>
+
+  <div class="grid md:grid-cols-3 gap-6 mt-6">
+    <div class="p-6 rounded-2xl border border-slate-700 bg-slate-900/60">
+      <h4 class="text-white font-semibold">PLC & SCADA Training</h4>
+      <p class="text-slate-300">Real industrial PLCs and live projects.</p>
     </div>
 
-    <div class="industry-chips">
-      <span>Automotive & Components</span>
-      <span>Food & Beverage</span>
-      <span>Pharma & Life Sciences</span>
-      <span>Water & Wastewater</span>
-      <span>Textile & Process</span>
-      <span>Buildings & Utilities</span>
+    <div class="p-6 rounded-2xl border border-slate-700 bg-slate-900/60">
+      <h4 class="text-white font-semibold">Industrial Automation Internship</h4>
+      <p class="text-slate-300">Factory-oriented hands-on exposure.</p>
     </div>
-  </section>
+
+    <div class="p-6 rounded-2xl border border-slate-700 bg-slate-900/60">
+      <h4 class="text-white font-semibold">IIoT & Digitalization Program</h4>
+      <p class="text-slate-300">Data, dashboards and cloud integration.</p>
+    </div>
+  </div>
+</section>
+
+
+<!-- PROJECTS -->
+<section id="projects" class="max-w-7xl mx-auto px-4 py-12">
+  <h3 class="text-3xl text-white font-bold">Projects & Case Studies</h3>
+  <p class="text-slate-400">Practical deployments that delivered measurable results.</p>
+
+  <div class="grid md:grid-cols-3 gap-6 mt-6">
+    <div class="p-6 rounded-2xl border border-slate-700 bg-slate-900/60">
+      <h4 class="text-white font-semibold">OEE Implementation</h4>
+      <p class="text-slate-300">Increased productivity by 18% in a packaging line.</p>
+    </div>
+
+    <div class="p-6 rounded-2xl border border-slate-700 bg-slate-900/60">
+      <h4 class="text-white font-semibold">Energy Monitoring System</h4>
+      <p class="text-slate-300">Reduced power consumption by 22%.</p>
+    </div>
+
+    <div class="p-6 rounded-2xl border border-slate-700 bg-slate-900/60">
+      <h4 class="text-white font-semibold">Machine Retrofit Project</h4>
+      <p class="text-slate-300">Upgraded legacy systems to Industry 4.0 ready.</p>
+    </div>
+  </div>
+</section>
+
+
+<!-- FOOTER -->
+<footer id="contact" class="mt-16 py-10 bg-slate-950 border-t border-slate-800">
+  <div class="max-w-7xl mx-auto px-4 grid md:grid-cols-3 gap-6 text-slate-300">
+
+    <div>
+      <h4 class="text-white font-bold text-lg">SGA Industrial Automations</h4>
+      <p>Engineering Efficiency. Delivering Sustainability.</p>
+    </div>
+
+    <div>
+      <p>📞 +91 76739 02729</p>
+      <p>📧 sga@sgaautomations.com</p>
+      <p>📍 India</p>
+    </div>
+
+    <div>
+      <p class="font-semibold text-white">Follow Us</p>
+      <p>🔗 LinkedIn</p>
+      <p>🔗 Instagram</p>
+      <p>🔗 Facebook</p>
+    </div>
+  </div>
+
+  <p class="text-center text-slate-500 mt-6 text-sm">
+    © 2026 SGA Industrial Automations — All Rights Reserved
+  </p>
+</footer>
+
 </BaseLayout>
-
-<style>
-  .hero {
-    display: grid;
-    grid-template-columns: minmax(0, 1.2fr) minmax(0, 1.1fr);
-    gap: 2.5rem;
-    align-items: center;
-    margin-bottom: 3.5rem;
-  }
-
-  .eyebrow {
-    font-size: 0.8rem;
-    letter-spacing: 0.18em;
-    text-transform: uppercase;
-    color: #9ca3af;
-    margin-bottom: 0.75rem;
-  }
-
-  .hero-text h1 {
-    font-size: 2.6rem;
-    line-height: 1.15;
-    margin-bottom: 0.9rem;
-  }
-
-  .sub {
-    font-size: 1.02rem;
-    line-height: 1.7;
-    color: #d1d5db;
-    max-width: 34rem;
-  }
-
-  .hero-actions {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 0.9rem;
-    margin-top: 1.6rem;
-  }
-
-  .btn {
-    display: inline-flex;
-    align-items: center;
-    gap: 0.45rem;
-    padding: 0.8rem 1.65rem;
-    border-radius: 999px;
-    font-size: 0.95rem;
-    font-weight: 600;
-    border: 1px solid transparent;
-    cursor: pointer;
-    text-decoration: none;
-    transition: transform 0.12s ease, box-shadow 0.12s ease, background 0.15s,
-      border-color 0.15s, color 0.15s;
-    white-space: nowrap;
-  }
-
-  .btn-primary {
-    background: radial-gradient(
-      circle at top left,
-      #22d3ee,
-      #0ea5e9 40%,
-      #4f46e5 100%
-    );
-    color: #020617;
-    box-shadow: 0 0 22px rgba(34, 211, 238, 0.6);
-    border-color: rgba(56, 189, 248, 0.9);
-  }
-
-  .btn-primary:hover {
-    transform: translateY(-1px);
-    box-shadow: 0 0 30px rgba(34, 211, 238, 0.9);
-  }
-
-  .btn-ghost {
-    background: transparent;
-    color: #e5e7eb;
-    border-color: rgba(148, 163, 184, 0.8);
-  }
-
-  .btn-ghost:hover {
-    background: rgba(15, 23, 42, 0.9);
-    border-color: #22d3ee;
-    box-shadow: 0 0 18px rgba(34, 211, 238, 0.4);
-  }
-
-  .btn-icon {
-    font-size: 1.1rem;
-  }
-
-  .hero-meta {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 0.6rem;
-    margin-top: 1.5rem;
-  }
-
-  .meta-chip {
-    display: inline-flex;
-    align-items: center;
-    gap: 0.4rem;
-    padding: 0.35rem 0.9rem;
-    border-radius: 999px;
-    background: rgba(15, 23, 42, 0.9);
-    border: 1px solid rgba(148, 163, 184, 0.4);
-    font-size: 0.82rem;
-    color: #d1d5db;
-  }
-
-  .dot {
-    width: 8px;
-    height: 8px;
-    border-radius: 999px;
-    display: inline-block;
-    box-shadow: 0 0 10px currentColor;
-  }
-
-  .dot-green {
-    color: #22c55e;
-    background: currentColor;
-  }
-
-  .dot-blue {
-    color: #0ea5e9;
-    background: currentColor;
-  }
-
-  .dot-amber {
-    color: #f59e0b;
-    background: currentColor;
-  }
-
-  /* HERO VISUAL */
-
-  .hero-visual {
-    position: relative;
-    min-height: 320px;
-  }
-
-  .grid-orbit {
-    position: absolute;
-    inset: 5%;
-    border-radius: 24px;
-    background-image: linear-gradient(
-        rgba(148, 163, 184, 0.15) 1px,
-        transparent 1px
-      ),
-      linear-gradient(
-        90deg,
-        rgba(148, 163, 184, 0.15) 1px,
-        transparent 1px
-      );
-    background-size: 40px 40px;
-    opacity: 0.5;
-    mask-image: radial-gradient(circle at center, black 60%, transparent 100%);
-    animation: grid-move 18s linear infinite;
-  }
-
-  .robotic-core {
-    position: relative;
-    width: 100%;
-    max-width: 360px;
-    aspect-ratio: 1 / 1;
-    margin: 0 auto;
-    margin-top: 0.5rem;
-  }
-
-  .ring {
-    position: absolute;
-    inset: 10%;
-    border-radius: 999px;
-    border: 1px solid rgba(148, 163, 184, 0.45);
-    box-shadow: 0 0 30px rgba(15, 23, 42, 0.9);
-  }
-
-  .ring-outer {
-    animation: ring-spin 36s linear infinite;
-  }
-
-  .ring-middle {
-    inset: 22%;
-    border-style: dashed;
-    opacity: 0.8;
-    animation: ring-spin-reverse 26s linear infinite;
-  }
-
-  .ring-inner {
-    inset: 36%;
-    border-color: rgba(56, 189, 248, 0.9);
-    box-shadow: 0 0 25px rgba(56, 189, 248, 0.6);
-    animation: pulse-inner 3.8s ease-in-out infinite;
-  }
-
-  .robotic-arm {
-    position: absolute;
-    inset: 26%;
-    transform-origin: 50% 80%;
-    animation: arm-sweep 6.5s ease-in-out infinite;
-  }
-
-  .arm-base {
-    position: absolute;
-    bottom: 8%;
-    left: 45%;
-    width: 10%;
-    height: 18%;
-    border-radius: 999px;
-    background: radial-gradient(circle at top, #1f2937, #020617);
-    border: 1px solid rgba(148, 163, 184, 0.7);
-  }
-
-  .arm-segment {
-    position: absolute;
-    width: 8%;
-    height: 34%;
-    left: 46%;
-    background: linear-gradient(#22d3ee, #4f46e5);
-    border-radius: 999px;
-  }
-
-  .arm-seg-1 {
-    bottom: 22%;
-    transform-origin: 50% 100%;
-    transform: rotate(-18deg);
-  }
-
-  .arm-seg-2 {
-    bottom: 44%;
-    transform-origin: 50% 100%;
-    transform: rotate(18deg);
-  }
-
-  .arm-head {
-    position: absolute;
-    bottom: 63%;
-    left: 44%;
-    width: 14%;
-    height: 10%;
-    border-radius: 12px;
-    background: radial-gradient(circle at top, #e5e7eb, #0f172a);
-    border: 1px solid rgba(56, 189, 248, 0.9);
-    box-shadow: 0 0 18px rgba(56, 189, 248, 0.8);
-  }
-
-  .spark {
-    position: absolute;
-    width: 6px;
-    height: 6px;
-    border-radius: 999px;
-    background: #facc15;
-    box-shadow: 0 0 18px rgba(250, 204, 21, 0.9);
-    opacity: 0.1;
-  }
-
-  .spark-1 {
-    top: 14%;
-    left: 18%;
-    animation: spark-pulse 3s ease-in-out infinite;
-  }
-
-  .spark-2 {
-    top: 26%;
-    right: 15%;
-    animation: spark-pulse 4s ease-in-out infinite 0.8s;
-  }
-
-  .spark-3 {
-    bottom: 12%;
-    left: 32%;
-    animation: spark-pulse 3.6s ease-in-out infinite 0.4s;
-  }
-
-  .holo-card {
-    position: absolute;
-    padding: 0.7rem 0.85rem;
-    border-radius: 14px;
-    background: rgba(15, 23, 42, 0.9);
-    border: 1px solid rgba(56, 189, 248, 0.7);
-    box-shadow: 0 0 18px rgba(56, 189, 248, 0.6);
-    font-size: 0.72rem;
-    min-width: 130px;
-    backdrop-filter: blur(12px);
-  }
-
-  .holo-label {
-    margin: 0;
-    text-transform: uppercase;
-    letter-spacing: 0.16em;
-    color: #9ca3af;
-    font-size: 0.7rem;
-  }
-
-  .holo-value {
-    margin: 0.25rem 0 0.35rem;
-    font-size: 1rem;
-  }
-
-  .holo-pill {
-    display: inline-flex;
-    align-items: center;
-    padding: 0.18rem 0.5rem;
-    border-radius: 999px;
-    font-size: 0.65rem;
-    background: rgba(15, 23, 42, 0.95);
-    border: 1px solid rgba(148, 163, 184, 0.7);
-    color: #cbd5f5;
-  }
-
-  .pill-green {
-    border-color: #22c55e;
-    color: #bbf7d0;
-  }
-
-  .holo-top {
-    top: 8%;
-    left: 10%;
-    animation: float-soft 7s ease-in-out infinite;
-  }
-
-  .holo-right {
-    top: 24%;
-    right: -4%;
-    animation: float-soft 8s ease-in-out infinite 0.8s;
-  }
-
-  .holo-bottom {
-    bottom: 4%;
-    left: 18%;
-    animation: float-soft 9s ease-in-out infinite 0.4s;
-  }
-
-  /* SECTIONS */
-
-  .section {
-    margin-bottom: 3rem;
-  }
-
-  .stats {
-    display: grid;
-    gap: 2rem;
-    grid-template-columns: minmax(0, 1.3fr) minmax(0, 1.4fr);
-  }
-
-  .stat-card {
-    background: rgba(15, 23, 42, 0.9);
-    border-radius: 20px;
-    padding: 1.8rem;
-    border: 1px solid rgba(148, 163, 184, 0.4);
-    box-shadow: 0 18px 40px rgba(0, 0, 0, 0.6);
-  }
-
-  .stat-label {
-    text-transform: uppercase;
-    font-size: 0.78rem;
-    letter-spacing: 0.16em;
-    color: #9ca3af;
-  }
-
-  .stat-card h2 {
-    margin-top: 0.5rem;
-    margin-bottom: 0.75rem;
-  }
-
-  .stat-card p {
-    margin: 0;
-    color: #d1d5db;
-  }
-
-  .stat-grid {
-    display: grid;
-    grid-template-columns: repeat(3, minmax(0, 1fr));
-    gap: 1rem;
-  }
-
-  .stat-mini {
-    background: rgba(15, 23, 42, 0.8);
-    border-radius: 16px;
-    padding: 1.1rem;
-    border: 1px solid rgba(51, 65, 85, 0.9);
-  }
-
-  .stat-number {
-    margin: 0 0 0.25rem;
-    font-size: 0.95rem;
-    color: #e5e7eb;
-    font-weight: 600;
-  }
-
-  .stat-text {
-    margin: 0;
-    font-size: 0.88rem;
-    color: #9ca3af;
-  }
-
-  .section-cards .section-header,
-  .industries .section-header {
-    margin-bottom: 1.5rem;
-  }
-
-  .section-header h2 {
-    margin: 0 0 0.4rem;
-  }
-
-  .section-header p {
-    margin: 0;
-    color: #9ca3af;
-    font-size: 0.95rem;
-  }
-
-  .cards-grid {
-    display: grid;
-    grid-template-columns: repeat(3, minmax(0, 0.33fr));
-    gap: 1.25rem;
-  }
-
-  .card {
-    background: rgba(15, 23, 42, 0.9);
-    border-radius: 18px;
-    padding: 1.4rem;
-    border: 1px solid rgba(51, 65, 85, 0.9);
-    box-shadow: 0 16px 40px rgba(0, 0, 0, 0.6);
-    font-size: 0.95rem;
-  }
-
-  .card h3 {
-    margin-top: 0;
-    margin-bottom: 0.4rem;
-  }
-
-  .card p {
-    margin-top: 0;
-    margin-bottom: 0.6rem;
-    color: #d1d5db;
-  }
-
-  .card ul {
-    margin: 0 0 0.7rem 1.1rem;
-    padding: 0;
-    color: #9ca3af;
-  }
-
-  .card-link {
-    font-size: 0.9rem;
-    color: #38bdf8;
-    text-decoration: none;
-  }
-
-  .card-link:hover {
-    text-decoration: underline;
-  }
-
-  .industries .industry-chips {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 0.6rem;
-  }
-
-  .industry-chips span {
-    padding: 0.38rem 0.9rem;
-    border-radius: 999px;
-    font-size: 0.86rem;
-    background: rgba(15, 23, 42, 0.9);
-    border: 1px solid rgba(148, 163, 184, 0.5);
-  }
-
-  /* ANIMATIONS */
-
-  @keyframes grid-move {
-    from {
-      background-position: 0 0, 0 0;
-    }
-    to {
-      background-position: 40px 40px, 40px 40px;
-    }
-  }
-
-  @keyframes ring-spin {
-    from {
-      transform: rotate(0deg);
-    }
-    to {
-      transform: rotate(360deg);
-    }
-  }
-
-  @keyframes ring-spin-reverse {
-    from {
-      transform: rotate(0deg);
-    }
-    to {
-      transform: rotate(-360deg);
-    }
-  }
-
-  @keyframes pulse-inner {
-    0%,
-    100% {
-      box-shadow: 0 0 15px rgba(56, 189, 248, 0.5);
-      opacity: 0.85;
-    }
-    50% {
-      box-shadow: 0 0 32px rgba(56, 189, 248, 0.95);
-      opacity: 1;
-    }
-  }
-
-  @keyframes arm-sweep {
-    0%,
-    100% {
-      transform: rotate(-8deg);
-    }
-    50% {
-      transform: rotate(10deg);
-    }
-  }
-
-  @keyframes spark-pulse {
-    0%,
-    100% {
-      opacity: 0.15;
-      transform: translateY(0);
-    }
-    50% {
-      opacity: 1;
-      transform: translateY(-4px);
-    }
-  }
-
-  @keyframes float-soft {
-    0%,
-    100% {
-      transform: translateY(0px);
-    }
-    50% {
-      transform: translateY(-8px);
-    }
-  }
-
-  @media (max-width: 960px) {
-    .hero {
-      grid-template-columns: 1fr;
-    }
-
-    .hero-visual {
-      order: -1;
-    }
-
-    .hero-text h1 {
-      font-size: 2.2rem;
-    }
-
-    .stats {
-      grid-template-columns: 1fr;
-    }
-
-    .stat-grid {
-      grid-template-columns: 1fr;
-    }
-
-    .cards-grid {
-      grid-template-columns: 1fr;
-    }
-  }
-
-  @media (max-width: 640px) {
-    .hero-actions {
-      flex-direction: column;
-      align-items: stretch;
-    }
-  }
-</style>
