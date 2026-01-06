@@ -3,345 +3,268 @@ import BaseLayout from "../layouts/BaseLayout.astro";
 ---
 
 <BaseLayout
-  title="SGA Industrial Automations | Industry 4.0, Automation, IIoT, SCADA & Control Panels"
-  description="SGA Industrial Automations delivers Industry 4.0 automation, PLC & SCADA systems, IIoT dashboards, smart control panels, energy optimization solutions and industrial training programs."
+  title="SGA Industrial Automations | Industry 4.0 & 5.0 Automation • IIoT • SCADA • Smart Manufacturing"
+  description="SGA Industrial Automations bridges conventional engineering with future technologies — Industry 4.0 & 5.0 system integration, PLC, SCADA, IIoT dashboards, smart panels, training & digital transformation."
 >
 
-<!-- ================= PARTICLE BACKGROUND ================= -->
-<canvas id="particles"></canvas>
+<!-- PARTICLE BACKGROUND -->
+<canvas id="particles" class="fixed inset-0 -z-10"></canvas>
 
-<!-- ================= HERO ================= -->
-<section class="hero-wrap">
-  <div class="hero-layout">
+<!-- ================== NAVBAR ================== -->
+<header class="backdrop-blur-xl bg-slate-900/60 border-b border-white/10 sticky top-0 z-50">
+  <div class="max-w-7xl mx-auto flex items-center justify-between px-4 py-3">
+    <h1 class="text-xl font-bold text-cyan-300">SGA Industrial Automations</h1>
 
-    <div class="hero-left">
-      <p class="eyebrow">INDUSTRIAL AUTOMATION • IIOT • SCADA • CONTROL PANELS</p>
+    <nav class="hidden md:flex gap-6 text-sm">
+      <a href="#solutions" class="hover:text-cyan-300">Solutions</a>
+      <a href="#industries" class="hover:text-cyan-300">Industries</a>
+      <a href="#products" class="hover:text-cyan-300">Products</a>
+      <a href="#training" class="hover:text-cyan-300">Training</a>
+      <a href="#contact" class="hover:text-cyan-300">Contact</a>
+    </nav>
 
-      <h1 class="hero-title">
-        Powering the Future of<br />
-        <span class="grad">Industrial Automation</span>
-      </h1>
-
-      <p class="hero-sub">
-        We automate, connect and digitize factories with PLC, SCADA, IIoT and intelligent control systems —
-        delivering real-time visibility of production, downtime and energy.
-      </p>
-
-      <div class="cta-row">
-        <a href="#contact" class="btn-primary">⚡ Request a Project Discussion</a>
-        <a href="tel:+917673902729" class="btn-outline">📞 +91 76739 02729</a>
-      </div>
-
-      <div class="tag-row">
-        <span class="tag">Machine Automation</span>
-        <span class="tag">IIoT Dashboards</span>
-        <span class="tag">Energy Monitoring</span>
-      </div>
-    </div>
-
-    <!-- RIGHT futuristic orbit -->
-    <div class="hero-visual">
-      <div class="orbit-layer outer"></div>
-      <div class="orbit-layer middle"></div>
-      <div class="orbit-core"></div>
-
-      <div class="kpi-card top">OEE 92.4%</div>
-      <div class="kpi-card right">Energy −18%</div>
-      <div class="kpi-card bottom green">All Lines Online</div>
-    </div>
-
+    <a href="tel:+917673902729" class="px-4 py-2 rounded-full bg-cyan-400 text-black font-semibold">
+      📞 +91 76739 02729
+    </a>
   </div>
-</section>
+</header>
 
-<!-- ================= ANIMATED COUNTERS ================= -->
-<section class="counter-wrap">
-  <div class="counter">
-    <span class="num" data-val="15">0</span>+
-    <p>Years Team Experience</p>
-  </div>
+<!-- ================== HERO ================== -->
+<section class="max-w-7xl mx-auto grid md:grid-cols-2 gap-10 px-4 py-16">
 
-  <div class="counter">
-    <span class="num" data-val="120">0</span>+
-    <p>Completed Projects</p>
-  </div>
+  <!-- LEFT HERO -->
+  <div class="reveal">
+    <p class="tracking-widest text-slate-300 text-xs">
+      INDUSTRY 4.0 • 5.0 • AUTOMATION • IIOT • SCADA • DIGITAL FACTORY
+    </p>
 
-  <div class="counter">
-    <span class="num" data-val="40">0</span>+
-    <p>Industrial Clients</p>
-  </div>
-
-  <div class="counter">
-    <span class="num" data-val="12">0</span>+
-    <p>Industry Segments</p>
-  </div>
-</section>
-
-<!-- ================= TESTIMONIAL CAROUSEL ================= -->
-<section class="testimonials-wrap">
-  <h2>What Our Clients Say</h2>
-  <p class="note">Sample testimonials for layout preview — real testimonials will be added soon.</p>
-
-  <div class="carousel-container">
-    <div class="carousel-track">
-
-      <div class="testimonial-card">
-        <p>
-          “SGA transformed our production line. Downtime reduced significantly and
-          we now track performance in real time. Their technical depth is impressive.”
-        </p>
-        <strong>— Production Head, Automotive Components Manufacturer</strong>
-      </div>
-
-      <div class="testimonial-card">
-        <p>
-          “The team understands real factory challenges. They bridged our shop floor
-          with digital dashboards without disturbing operations.”
-        </p>
-        <strong>— Plant Manager, FMCG Industry</strong>
-      </div>
-
-      <div class="testimonial-card">
-        <p>
-          “We retrofitted older machines instead of replacing them.
-          Thanks to SGA, the same machines are now smart, connected and monitored.”
-        </p>
-        <strong>— Director, Process Industry</strong>
-      </div>
-
-      <div class="testimonial-card">
-        <p>
-          “True OT–IT convergence experts. Our management finally gets real-time visibility
-          without calling the production team every hour.”
-        </p>
-        <strong>— Operations Head, Manufacturing Unit</strong>
-      </div>
-
-    </div>
-  </div>
-</section>
-
-<!-- ================= ABOUT ================= -->
-<section id="about" class="about-wrap">
-  <div class="about-card">
-
-    <p class="eyebrow">ABOUT SGA</p>
-
-    <h2 class="about-title">
-      Turning Complex Industrial Problems<br />
-      into Elegant Automated Systems
+    <h2 class="text-4xl md:text-5xl font-bold leading-tight mt-3">
+      Bridging Conventional Engineering<br />
+      <span class="bg-gradient-to-r from-cyan-400 to-indigo-400 bg-clip-text text-transparent">
+        with the Future of Technology
+      </span>
     </h2>
 
-    <p class="about-body">
-      SGA Industrial Automations was founded with the belief that automation should not complicate operations —
-      it should make machines <strong>intelligent, visible and responsive</strong>.
+    <p class="text-slate-300 mt-4">
+      Premier Industry 4.0 & 5.0 Automation System Integrator since 2025,
+      powered by 15+ years of cumulative experience. We convert legacy infrastructure
+      into smart, connected and sustainable operations.
     </p>
 
-    <p class="about-body">
-      Our engineers bring <strong>15+ years of cumulative experience</strong> spanning discrete & process industries,
-      brownfield retrofits, SCADA systems, PLC logic optimisation, commissioning and IIoT deployments.
+    <p class="mt-2 text-sm text-slate-400">
+      Mission: <b>Bridging Operational Technology (OT) & Information Technology (IT)</b>
     </p>
 
-    <p class="about-body">
-      What sets us apart is deep subject knowledge: controls, sensors, communication protocols, drives,
-      energy systems and enterprise integration. We are not just integrators — we are
-      <strong>problem solvers</strong> who understand the shop-floor, maintenance challenges and business expectations.
-    </p>
+    <div class="flex gap-3 mt-6 flex-wrap">
+      <a href="#contact" class="px-6 py-3 rounded-full font-semibold bg-cyan-400 text-black">
+        ⚡ Start Your Automation Journey
+      </a>
 
-    <div class="about-facts">
-      <div class="fact"><strong>Since 2025</strong><span>Registered company</span></div>
-      <div class="fact"><strong>15+ Years</strong><span>Cumulative team expertise</span></div>
-      <div class="fact"><strong>OT + IT</strong><span>True Industry 4.0 mindset</span></div>
+      <a href="#about" class="px-6 py-3 rounded-full border border-cyan-400 text-cyan-300">
+        Learn More
+      </a>
+    </div>
+  </div>
+
+  <!-- 3D ORB HERO -->
+  <div class="relative perspective-1000 reveal">
+
+    <!-- glowing orb -->
+    <div id="orb3d" class="w-80 h-80 md:w-96 md:h-96 mx-auto rounded-full border border-cyan-400/40 shadow-[0_0_120px_#22d3ee55] bg-gradient-to-br from-slate-900 to-slate-800">
+    </div>
+
+    <!-- floating HUD stats -->
+    <div class="absolute -left-6 top-8 bg-slate-900/80 border border-cyan-400 px-3 py-1 rounded-xl text-sm">
+      OEE 92.4%
+    </div>
+
+    <div class="absolute right-0 top-24 bg-slate-900/80 border border-indigo-400 px-3 py-1 rounded-xl text-sm">
+      Energy −18%
+    </div>
+
+    <div class="absolute left-10 bottom-6 bg-slate-900/80 border border-green-400 px-3 py-1 rounded-xl text-sm">
+      All Lines Online
     </div>
 
   </div>
+
 </section>
 
-<!-- ================= CASE STUDIES ================= -->
-<section class="case-wrap">
-  <h2>Case Studies</h2>
+<!-- TAG BANNER -->
+<section class="text-center py-4 reveal">
+  <h3 class="text-2xl font-semibold bg-gradient-to-r from-green-300 to-cyan-300 bg-clip-text text-transparent">
+    Engineering Efficiency. Delivering Sustainability.
+  </h3>
+</section>
 
-  <div class="case-grid">
-    <div class="case-card">
-      <h3>Packaging Line OEE Improvement</h3>
-      <p>Implemented OEE + downtime analytics and increased productivity by 18%.</p>
-    </div>
+<!-- ================== COUNTERS ================== -->
+<section class="max-w-6xl mx-auto grid md:grid-cols-4 gap-4 px-4 py-10">
+  <div class="p-6 rounded-2xl bg-slate-900/70 border border-white/10 text-center reveal">
+    <div class="text-4xl font-bold text-cyan-400 num" data-val="15">0</div>
+    Years Experience
+  </div>
+  <div class="p-6 rounded-2xl bg-slate-900/70 border border-white/10 text-center reveal">
+    <div class="text-4xl font-bold text-cyan-400 num" data-val="120">0</div>
+    Projects Delivered
+  </div>
+  <div class="p-6 rounded-2xl bg-slate-900/70 border border-white/10 text-center reveal">
+    <div class="text-4xl font-bold text-cyan-400 num" data-val="40">0</div>
+    Industrial Clients
+  </div>
+  <div class="p-6 rounded-2xl bg-slate-900/70 border border-white/10 text-center reveal">
+    <div class="text-4xl font-bold text-cyan-400 num" data-val="12">0</div>
+    Industry Segments
+  </div>
+</section>
 
-    <div class="case-card">
-      <h3>Energy Monitoring System</h3>
-      <p>Deployed power & utility dashboards and achieved significant energy savings.</p>
-    </div>
+<!-- ================== SOLUTIONS ================== -->
+<section id="solutions" class="max-w-7xl mx-auto px-4 py-14">
+  <h2 class="text-3xl font-bold text-center reveal">Full-Stack Automation & Digital Solutions</h2>
 
-    <div class="case-card">
-      <h3>Legacy Machine Retrofit</h3>
-      <p>Converted conventional systems into IIoT-enabled smart equipment.</p>
+  <p class="text-center text-slate-400 mt-2 reveal">
+    Combining conventional engineering with modern digital technology — PLC, SCADA, IIoT, AI-ready data systems
+  </p>
+
+  <div class="grid md:grid-cols-3 gap-5 mt-6">
+    <div class="p-5 rounded-2xl bg-slate-900/80 border border-white/10 reveal">Industrial Automation</div>
+    <div class="p-5 rounded-2xl bg-slate-900/80 border border-white/10 reveal">SCADA / HMI</div>
+    <div class="p-5 rounded-2xl bg-slate-900/80 border border-white/10 reveal">IIoT & Smart Manufacturing</div>
+    <div class="p-5 rounded-2xl bg-slate-900/80 border border-white/10 reveal">Smart Control Panels</div>
+    <div class="p-5 rounded-2xl bg-slate-900/80 border border-white/10 reveal">Energy Monitoring</div>
+    <div class="p-5 rounded-2xl bg-slate-900/80 border border-white/10 reveal">Retrofit & Modernization</div>
+  </div>
+</section>
+
+<!-- ================== INDUSTRIES ================== -->
+<section id="industries" class="text-center px-4 py-10">
+  <h2 class="text-3xl font-bold reveal">Industries We Serve</h2>
+
+  <div class="flex flex-wrap gap-2 justify-center mt-4">
+    <span class="px-4 py-1 border rounded-full reveal">Pharmaceutical</span>
+    <span class="px-4 py-1 border rounded-full reveal">Food Processing</span>
+    <span class="px-4 py-1 border rounded-full reveal">Manufacturing</span>
+    <span class="px-4 py-1 border rounded-full reveal">Automotive</span>
+    <span class="px-4 py-1 border rounded-full reveal">Power</span>
+    <span class="px-4 py-1 border rounded-full reveal">Textile</span>
+    <span class="px-4 py-1 border rounded-full reveal">Water & Wastewater</span>
+  </div>
+</section>
+
+<!-- ================== TESTIMONIALS ================== -->
+<section class="max-w-6xl mx-auto px-4 py-12">
+  <h2 class="text-3xl font-bold text-center reveal">Client Words</h2>
+  <p class="text-center text-slate-400 text-sm">Sample testimonials for layout preview — real testimonials will be added</p>
+
+  <div class="overflow-hidden mt-4">
+    <div class="flex gap-4 carousel-track">
+
+      <div class="p-5 rounded-2xl bg-slate-900/80 border border-white/10 min-w-[320px]">
+        “SGA didn’t just automate our machines — they improved the way our factory thinks.”
+        <div class="text-sm text-cyan-300 mt-1">— Manufacturing Unit</div>
+      </div>
+
+      <div class="p-5 rounded-2xl bg-slate-900/80 border border-white/10 min-w-[320px]">
+        “Their knowledge of both OT and IT is rare. Maintenance teams love the simplicity.”
+        <div class="text-sm text-cyan-300 mt-1">— Process Industry</div>
+      </div>
+
+      <div class="p-5 rounded-2xl bg-slate-900/80 border border-white/10 min-w-[320px]">
+        “We achieved visibility that we always wanted but never had.”
+        <div class="text-sm text-cyan-300 mt-1">— FMCG Plant</div>
+      </div>
+
     </div>
   </div>
 </section>
 
-<!-- ================= TRAINING ================= -->
-<section class="training-wrap">
-  <h2>Industrial Training Programs</h2>
+<!-- ================== BLOG NEWS ================== -->
+<section class="max-w-7xl mx-auto px-4 py-10">
+  <h2 class="text-3xl font-bold text-center reveal">Latest Insights</h2>
 
-  <div class="price-grid">
-    <div class="price-card">
-      <h3>PLC & SCADA Training</h3>
-      <p>Hands-on industrial controllers</p>
-      <strong>₹ Enquire</strong>
+  <div class="grid md:grid-cols-3 gap-4 mt-4">
+    <div class="p-5 rounded-2xl bg-slate-900/80 border border-white/10 reveal">
+      Industry 4.0 — Beyond Buzzwords
     </div>
 
-    <div class="price-card highlighted">
-      <h3>Industrial Automation Internship</h3>
-      <p>Live projects + commissioning exposure</p>
-      <strong>₹ Enquire</strong>
+    <div class="p-5 rounded-2xl bg-slate-900/80 border border-white/10 reveal">
+      Why Retrofitting Beats Machine Replacement
     </div>
 
-    <div class="price-card">
-      <h3>IIoT & Smart Manufacturing</h3>
-      <p>Dashboards, analytics & cloud</p>
-      <strong>₹ Enquire</strong>
+    <div class="p-5 rounded-2xl bg-slate-900/80 border border-white/10 reveal">
+      Energy Monitoring = Instant ROI
     </div>
   </div>
 </section>
 
-<!-- ================= CONTACT ================= -->
-<section id="contact" class="contact-wrap">
-  <h2>Request a Discussion</h2>
+<!-- ================== CONTACT ================== -->
+<section id="contact" class="max-w-4xl mx-auto px-4 py-12 text-center">
+  <h2 class="text-3xl font-bold reveal">Request a Discussion</h2>
 
-  <form class="contact-form">
-    <input placeholder="Your Name" required />
-    <input placeholder="Email" required />
-    <input placeholder="Phone" required />
-    <textarea placeholder="Tell us about your requirement"></textarea>
-    <button type="submit">Submit</button>
+  <form class="grid gap-3 mt-6 reveal">
+    <input class="p-3 rounded-xl bg-slate-900/80 border border-white/10" placeholder="Your Name" />
+    <input class="p-3 rounded-xl bg-slate-900/80 border border-white/10" placeholder="Email" />
+    <input class="p-3 rounded-xl bg-slate-900/80 border border-white/10" placeholder="Phone" />
+    <textarea class="p-3 rounded-xl bg-slate-900/80 border border-white/10" placeholder="Requirement"></textarea>
+    <button class="px-6 py-3 bg-cyan-400 rounded-full text-black font-semibold">Submit</button>
   </form>
 </section>
 
-<!-- ================= WHATSAPP FLOATING BUTTON ================= -->
-<a href="https://wa.me/917673902729" class="wa-btn">💬</a>
+<!-- ================== FOOTER ================== -->
+<footer class="bg-slate-900/80 border-t border-white/10 mt-10 py-8">
+  <div class="max-w-7xl mx-auto px-4 grid md:grid-cols-3 gap-6">
+    <div>
+      <h3 class="font-bold text-lg text-cyan-300">SGA Industrial Automations</h3>
+      <p>Where OT Meets IT</p>
+    </div>
 
-<!-- ================= JSON-LD ================= -->
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "Organization",
-  "name": "SGA Industrial Automations",
-  "url": "https://sgaautomations.com",
-  "address": { "@type": "PostalAddress", "addressCountry": "IN" }
-}
-</script>
+    <div>
+      <p>📍 India</p>
+      <p>📞 +91 76739 02729</p>
+      <p>✉️ info@sga.com</p>
+    </div>
+
+    <div class="flex gap-3">
+      <span>🌐</span>
+      <span>🔗</span>
+      <span>💬</span>
+    </div>
+  </div>
+</footer>
+
+<!-- WhatsApp Floating -->
+<a href="https://wa.me/917673902729" class="fixed bottom-6 right-6 bg-green-500 text-black w-14 h-14 rounded-full flex items-center justify-center text-2xl">💬</a>
 
 <!-- ================= SCRIPTS ================= -->
 <script>
-/* Particle Background */
-const c = document.getElementById("particles");
-const ctx = c.getContext("2d");
-c.height = window.innerHeight; c.width = window.innerWidth;
-let arr = [];
-for(let i=0;i<120;i++) arr.push({x:Math.random()*c.width,y:Math.random()*c.height,dx:(Math.random()-0.5),dy:(Math.random()-0.5)})
-function animate(){
- ctx.clearRect(0,0,c.width,c.height);
- ctx.fillStyle="#38bdf8";
- arr.forEach(p=>{
-  ctx.fillRect(p.x,p.y,2,2);
-  p.x+=p.dx;p.y+=p.dy;
-  if(p.x<0||p.x>c.width)p.dx*=-1;
-  if(p.y<0||p.y>c.height)p.dy*=-1;
- });
- requestAnimationFrame(animate);
-}
-animate();
+/* Particles */
+const c=document.getElementById("particles");const ctx=c.getContext("2d");
+c.width=innerWidth;c.height=innerHeight;
+let p=[];for(let i=0;i<120;i++)p.push({x:Math.random()*c.width,y:Math.random()*c.height,dx:(Math.random()-.5),dy:(Math.random()-.5)});
+(function draw(){ctx.clearRect(0,0,c.width,c.height);ctx.fillStyle="#67e8f9";
+p.forEach(e=>{ctx.fillRect(e.x,e.y,2,2);e.x+=e.dx;e.y+=e.dy;if(e.x<0||e.x>c.width)e.dx*=-1;if(e.y<0||e.y>c.height)e.dy*=-1});requestAnimationFrame(draw)})();
 
-/* Counters */
-document.querySelectorAll(".num").forEach(el=>{
- let start=0,end=parseInt(el.getAttribute("data-val"));
- let c=setInterval(()=>{start++;el.textContent=start;if(start==end)clearInterval(c)},30);
-});
+/* Counter Animation */
+document.querySelectorAll(".num").forEach(el=>{let s=0,e=parseInt(el.dataset.val);let t=setInterval(()=>{s++;el.textContent=s;if(s===e)clearInterval(t)},25)});
 
-/* Testimonial Carousel Duplicate */
-const track=document.querySelector(".carousel-track");
-if(track){ track.innerHTML+=track.innerHTML; }
+/* Auto carousel */
+const track=document.querySelector(".carousel-track");if(track){track.innerHTML+=track.innerHTML;track.style.animation="scroll 30s linear infinite";}
+
+/* 3D Orb rotation */
+const orb=document.getElementById("orb3d");
+let ax=0,ay=0;
+setInterval(()=>{ax+=0.4;ay+=0.3;orb.style.transform=`rotateX(${ax}deg) rotateY(${ay}deg)`},30);
+
+/* Scroll reveal */
+const observer=new IntersectionObserver(entries=>{
+entries.forEach(e=>{if(e.isIntersecting)e.target.classList.add("show")})},{threshold:.2});
+document.querySelectorAll(".reveal").forEach(el=>observer.observe(el));
 </script>
 
 <style>
-body{background:#020617;color:white;margin:0}
-
-/* Particle canvas */
-#particles{position:fixed;inset:0;z-index:-1}
-
-/* HERO */
-.hero-wrap{padding:4rem 0}
-.hero-layout{max-width:1180px;margin:auto;display:grid;grid-template-columns:1.25fr 1fr;gap:2.5rem;align-items:center}
-.eyebrow{letter-spacing:.18em;color:#8FA3C8;font-size:.8rem}
-.hero-title{font-size:3rem;line-height:1.05}
-.grad{background:linear-gradient(90deg,#38bdf8,#818cf8);-webkit-background-clip:text;color:transparent}
-.hero-sub{color:#cfd6e8;max-width:36rem}
-.cta-row{display:flex;gap:.6rem;margin-top:1.1rem;flex-wrap:wrap}
-.btn-primary{background:radial-gradient(circle at top left,#22d3ee,#0ea5e9 40%,#4f46e5);padding:.9rem 1.6rem;border-radius:999px;color:#020617;font-weight:700;text-decoration:none}
-.btn-outline{border:1px solid #64748b;padding:.9rem 1.6rem;border-radius:999px;text-decoration:none;color:white}
-.tag-row{display:flex;gap:.45rem;margin-top:1rem;flex-wrap:wrap}
-.tag{padding:.35rem .7rem;border-radius:999px;border:1px solid #334155}
-
-/* HERO ORBIT */
-.hero-visual{position:relative;aspect-ratio:1/1;max-width:460px;margin:auto}
-.orbit-layer{position:absolute;inset:4%;border-radius:50%;box-shadow:0 0 55px #38bdf855}
-.outer{border:1px solid #4f46e5}
-.middle{inset:16%;border:1px dashed #38bdf8}
-.orbit-core{position:absolute;inset:32%;border-radius:50%;background:radial-gradient(circle,#22d3ee33,#020617 70%)}
-.kpi-card{position:absolute;background:#020617dd;border:1px solid #38bdf8;border-radius:14px;padding:.45rem .65rem}
-.top{top:4%;left:4%} .right{top:28%;right:-8%} .bottom{bottom:6%;left:18%}
-.green{border-color:#22c55e}
-
-/* COUNTERS */
-.counter-wrap{max-width:1150px;margin:1.8rem auto;display:grid;grid-template-columns:repeat(4,1fr);gap:1rem}
-.counter{text-align:center;background:#020617cc;border:1px solid #1f2937;border-radius:18px;padding:1rem}
-.counter .num{font-size:2rem;color:#38bdf8}
-
-/* ===== TESTIMONIAL CAROUSEL ===== */
-.testimonials-wrap{max-width:1100px;margin:2.5rem auto;text-align:center}
-.note{color:#9aa4ba;font-size:.8rem}
-.carousel-container{overflow:hidden;position:relative;margin-top:1.4rem}
-.carousel-track{display:flex;gap:1rem;width:max-content;animation:scroll 28s linear infinite}
-.carousel-container:hover .carousel-track{animation-play-state:paused}
-.testimonial-card{min-width:320px;max-width:340px;background:#020617f2;border:1px solid #1f2937;border-radius:18px;padding:1.2rem;box-shadow:0 30px 70px #0007}
-.testimonial-card p{color:#d4d8e6}
-.testimonial-card strong{color:#9ecfff;font-size:.85rem}
+.perspective-1000{perspective:1000px}
+.reveal{opacity:0;transform:translateY(30px);transition:.6s}
+.show{opacity:1;transform:translateY(0)}
 @keyframes scroll{0%{transform:translateX(0)}100%{transform:translateX(-50%)}}
-
-/* ABOUT */
-.about-wrap{padding:2.6rem 0}
-.about-card{max-width:980px;margin:auto;background:#020617f2;border:1px solid #1f2937;border-radius:22px;padding:2rem;box-shadow:0 40px 90px #0008}
-.about-title{font-size:2.2rem}
-.about-facts{display:flex;gap:1rem;flex-wrap:wrap;margin-top:1rem}
-.fact{background:#020617dd;border:1px solid #334155;border-radius:16px;padding:.8rem 1.2rem}
-
-/* CASES */
-.case-wrap{max-width:1180px;margin:auto;padding:2.5rem 0}
-.case-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1rem}
-.case-card{background:#020617dd;border:1px solid #1f2937;border-radius:18px;padding:1rem}
-
-/* TRAINING */
-.training-wrap{text-align:center;padding:2.5rem 0}
-.price-grid{max-width:1000px;margin:auto;display:grid;grid-template-columns:repeat(3,1fr);gap:1rem}
-.price-card{background:#020617ee;border:1px solid #1f2937;border-radius:18px;padding:1.2rem}
-.highlighted{box-shadow:0 0 30px #38bdf855}
-
-/* CONTACT */
-.contact-wrap{text-align:center;padding:2.5rem 0}
-.contact-form{max-width:600px;margin:auto;display:grid;gap:.7rem}
-input,textarea{padding:.8rem;border-radius:12px;border:1px solid #1f2937;background:#020617cc;color:white}
-button{padding:.9rem;border-radius:999px;background:#22d3ee;color:#020617;font-weight:800;border:0}
-
-/* WHATSAPP */
-.wa-btn{position:fixed;right:18px;bottom:18px;background:#22c55e;width:58px;height:58px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:22px}
-
-/* MOBILE */
-@media(max-width:900px){
-.hero-layout{grid-template-columns:1fr}
-.case-grid{grid-template-columns:1fr}
-.price-grid{grid-template-columns:1fr}
-.counter-wrap{grid-template-columns:repeat(2,1fr)}
-.testimonial-card{min-width:260px;max-width:280px}
-}
 </style>
 
 </BaseLayout>
