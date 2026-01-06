@@ -3,268 +3,223 @@ import BaseLayout from "../layouts/BaseLayout.astro";
 ---
 
 <BaseLayout
-  title="SGA Industrial Automations | Industry 4.0 & 5.0 Automation • IIoT • SCADA • Smart Manufacturing"
+  title="SGA Industrial Automations | Industry 4.0 & 5.0 Automation, IIoT, SCADA, Smart Manufacturing"
   description="SGA Industrial Automations bridges conventional engineering with future technologies — Industry 4.0 & 5.0 system integration, PLC, SCADA, IIoT dashboards, smart panels, training & digital transformation."
 >
 
-<!-- PARTICLE BACKGROUND -->
-<canvas id="particles" class="fixed inset-0 -z-10"></canvas>
+<canvas id="particles"></canvas>
 
-<!-- ================== NAVBAR ================== -->
-<header class="backdrop-blur-xl bg-slate-900/60 border-b border-white/10 sticky top-0 z-50">
-  <div class="max-w-7xl mx-auto flex items-center justify-between px-4 py-3">
-    <h1 class="text-xl font-bold text-cyan-300">SGA Industrial Automations</h1>
+<header class="nav">
+  <div class="nav-inner">
+    <div class="logo">SGA Industrial Automations</div>
 
-    <nav class="hidden md:flex gap-6 text-sm">
-      <a href="#solutions" class="hover:text-cyan-300">Solutions</a>
-      <a href="#industries" class="hover:text-cyan-300">Industries</a>
-      <a href="#products" class="hover:text-cyan-300">Products</a>
-      <a href="#training" class="hover:text-cyan-300">Training</a>
-      <a href="#contact" class="hover:text-cyan-300">Contact</a>
+    <nav>
+      <a href="#solutions">Solutions</a>
+      <a href="#industries">Industries</a>
+      <a href="#products">Products</a>
+      <a href="#training">Training</a>
+      <a href="#contact">Contact</a>
     </nav>
 
-    <a href="tel:+917673902729" class="px-4 py-2 rounded-full bg-cyan-400 text-black font-semibold">
-      📞 +91 76739 02729
-    </a>
+    <a href="tel:+917673902729" class="call-btn">📞 +91 76739 02729</a>
   </div>
 </header>
 
-<!-- ================== HERO ================== -->
-<section class="max-w-7xl mx-auto grid md:grid-cols-2 gap-10 px-4 py-16">
+<section class="hero">
 
-  <!-- LEFT HERO -->
-  <div class="reveal">
-    <p class="tracking-widest text-slate-300 text-xs">
-      INDUSTRY 4.0 • 5.0 • AUTOMATION • IIOT • SCADA • DIGITAL FACTORY
-    </p>
+  <div class="hero-left reveal">
 
-    <h2 class="text-4xl md:text-5xl font-bold leading-tight mt-3">
+    <p class="eyebrow">INDUSTRY 4.0 • 5.0 • AUTOMATION • IIOT • SCADA • DIGITAL FACTORY</p>
+
+    <h1>
       Bridging Conventional Engineering<br />
-      <span class="bg-gradient-to-r from-cyan-400 to-indigo-400 bg-clip-text text-transparent">
-        with the Future of Technology
-      </span>
-    </h2>
+      <span class="grad">with the Future of Technology</span>
+    </h1>
 
-    <p class="text-slate-300 mt-4">
+    <p>
       Premier Industry 4.0 & 5.0 Automation System Integrator since 2025,
       powered by 15+ years of cumulative experience. We convert legacy infrastructure
       into smart, connected and sustainable operations.
     </p>
 
-    <p class="mt-2 text-sm text-slate-400">
-      Mission: <b>Bridging Operational Technology (OT) & Information Technology (IT)</b>
+    <p class="mission">
+      Mission: <strong>Bridging Operational Technology (OT) & Information Technology (IT)</strong>
     </p>
 
-    <div class="flex gap-3 mt-6 flex-wrap">
-      <a href="#contact" class="px-6 py-3 rounded-full font-semibold bg-cyan-400 text-black">
-        ⚡ Start Your Automation Journey
-      </a>
-
-      <a href="#about" class="px-6 py-3 rounded-full border border-cyan-400 text-cyan-300">
-        Learn More
-      </a>
+    <div class="cta">
+      <a href="#contact" class="btn-primary">⚡ Start Your Automation Journey</a>
+      <a href="#about" class="btn-outline">Learn More</a>
     </div>
+
   </div>
 
-  <!-- 3D ORB HERO -->
-  <div class="relative perspective-1000 reveal">
+  <div class="hero-right reveal">
+    <div id="orb"></div>
 
-    <!-- glowing orb -->
-    <div id="orb3d" class="w-80 h-80 md:w-96 md:h-96 mx-auto rounded-full border border-cyan-400/40 shadow-[0_0_120px_#22d3ee55] bg-gradient-to-br from-slate-900 to-slate-800">
+    <div class="stat top">OEE 92.4%</div>
+    <div class="stat right">Energy −18%</div>
+    <div class="stat bottom green">All Lines Online</div>
+  </div>
+
+</section>
+
+<section class="tag reveal">
+  Engineering Efficiency. Delivering Sustainability.
+</section>
+
+<section class="counters">
+
+  <div class="counter">
+    <span class="num" data-val="15">0</span>+ Years Experience
+  </div>
+
+  <div class="counter">
+    <span class="num" data-val="120">0</span>+ Projects Delivered
+  </div>
+
+  <div class="counter">
+    <span class="num" data-val="40">0</span>+ Industrial Clients
+  </div>
+
+  <div class="counter">
+    <span class="num" data-val="12">0</span>+ Industry Segments
+  </div>
+
+</section>
+
+<section id="solutions" class="card-section">
+
+  <h2>Full-Stack Automation & Digital Solutions</h2>
+
+  <div class="cards">
+
+    <div class="card reveal">Industrial Automation</div>
+    <div class="card reveal">SCADA / HMI Systems</div>
+    <div class="card reveal">IIoT & Smart Manufacturing</div>
+    <div class="card reveal">Smart Control Panels</div>
+    <div class="card reveal">Energy Monitoring</div>
+    <div class="card reveal">Retrofit & Modernization</div>
+
+  </div>
+
+</section>
+
+<section id="industries" class="chips">
+
+  <h2>Industries We Serve</h2>
+
+  <div>
+    <span>Pharmaceutical</span>
+    <span>Food Processing</span>
+    <span>Automotive</span>
+    <span>Manufacturing</span>
+    <span>Power</span>
+    <span>Textile</span>
+    <span>Water & Wastewater</span>
+  </div>
+
+</section>
+
+<section class="testimonials">
+
+  <h2>Client Words</h2>
+
+  <p class="sub">*Sample testimonials — real testimonials will be added*</p>
+
+  <div class="carousel">
+
+    <div class="tcard">
+      “SGA didn’t just automate machines — they improved how our factory thinks.”
     </div>
 
-    <!-- floating HUD stats -->
-    <div class="absolute -left-6 top-8 bg-slate-900/80 border border-cyan-400 px-3 py-1 rounded-xl text-sm">
-      OEE 92.4%
+    <div class="tcard">
+      “Rare expertise in both OT & IT. Maintenance team loves the simplicity.”
     </div>
 
-    <div class="absolute right-0 top-24 bg-slate-900/80 border border-indigo-400 px-3 py-1 rounded-xl text-sm">
-      Energy −18%
-    </div>
-
-    <div class="absolute left-10 bottom-6 bg-slate-900/80 border border-green-400 px-3 py-1 rounded-xl text-sm">
-      All Lines Online
+    <div class="tcard">
+      “We finally have the visibility we always wanted.”
     </div>
 
   </div>
 
 </section>
 
-<!-- TAG BANNER -->
-<section class="text-center py-4 reveal">
-  <h3 class="text-2xl font-semibold bg-gradient-to-r from-green-300 to-cyan-300 bg-clip-text text-transparent">
-    Engineering Efficiency. Delivering Sustainability.
-  </h3>
-</section>
+<section id="contact" class="contact">
 
-<!-- ================== COUNTERS ================== -->
-<section class="max-w-6xl mx-auto grid md:grid-cols-4 gap-4 px-4 py-10">
-  <div class="p-6 rounded-2xl bg-slate-900/70 border border-white/10 text-center reveal">
-    <div class="text-4xl font-bold text-cyan-400 num" data-val="15">0</div>
-    Years Experience
-  </div>
-  <div class="p-6 rounded-2xl bg-slate-900/70 border border-white/10 text-center reveal">
-    <div class="text-4xl font-bold text-cyan-400 num" data-val="120">0</div>
-    Projects Delivered
-  </div>
-  <div class="p-6 rounded-2xl bg-slate-900/70 border border-white/10 text-center reveal">
-    <div class="text-4xl font-bold text-cyan-400 num" data-val="40">0</div>
-    Industrial Clients
-  </div>
-  <div class="p-6 rounded-2xl bg-slate-900/70 border border-white/10 text-center reveal">
-    <div class="text-4xl font-bold text-cyan-400 num" data-val="12">0</div>
-    Industry Segments
-  </div>
-</section>
+  <h2>Request a Discussion</h2>
 
-<!-- ================== SOLUTIONS ================== -->
-<section id="solutions" class="max-w-7xl mx-auto px-4 py-14">
-  <h2 class="text-3xl font-bold text-center reveal">Full-Stack Automation & Digital Solutions</h2>
-
-  <p class="text-center text-slate-400 mt-2 reveal">
-    Combining conventional engineering with modern digital technology — PLC, SCADA, IIoT, AI-ready data systems
-  </p>
-
-  <div class="grid md:grid-cols-3 gap-5 mt-6">
-    <div class="p-5 rounded-2xl bg-slate-900/80 border border-white/10 reveal">Industrial Automation</div>
-    <div class="p-5 rounded-2xl bg-slate-900/80 border border-white/10 reveal">SCADA / HMI</div>
-    <div class="p-5 rounded-2xl bg-slate-900/80 border border-white/10 reveal">IIoT & Smart Manufacturing</div>
-    <div class="p-5 rounded-2xl bg-slate-900/80 border border-white/10 reveal">Smart Control Panels</div>
-    <div class="p-5 rounded-2xl bg-slate-900/80 border border-white/10 reveal">Energy Monitoring</div>
-    <div class="p-5 rounded-2xl bg-slate-900/80 border border-white/10 reveal">Retrofit & Modernization</div>
-  </div>
-</section>
-
-<!-- ================== INDUSTRIES ================== -->
-<section id="industries" class="text-center px-4 py-10">
-  <h2 class="text-3xl font-bold reveal">Industries We Serve</h2>
-
-  <div class="flex flex-wrap gap-2 justify-center mt-4">
-    <span class="px-4 py-1 border rounded-full reveal">Pharmaceutical</span>
-    <span class="px-4 py-1 border rounded-full reveal">Food Processing</span>
-    <span class="px-4 py-1 border rounded-full reveal">Manufacturing</span>
-    <span class="px-4 py-1 border rounded-full reveal">Automotive</span>
-    <span class="px-4 py-1 border rounded-full reveal">Power</span>
-    <span class="px-4 py-1 border rounded-full reveal">Textile</span>
-    <span class="px-4 py-1 border rounded-full reveal">Water & Wastewater</span>
-  </div>
-</section>
-
-<!-- ================== TESTIMONIALS ================== -->
-<section class="max-w-6xl mx-auto px-4 py-12">
-  <h2 class="text-3xl font-bold text-center reveal">Client Words</h2>
-  <p class="text-center text-slate-400 text-sm">Sample testimonials for layout preview — real testimonials will be added</p>
-
-  <div class="overflow-hidden mt-4">
-    <div class="flex gap-4 carousel-track">
-
-      <div class="p-5 rounded-2xl bg-slate-900/80 border border-white/10 min-w-[320px]">
-        “SGA didn’t just automate our machines — they improved the way our factory thinks.”
-        <div class="text-sm text-cyan-300 mt-1">— Manufacturing Unit</div>
-      </div>
-
-      <div class="p-5 rounded-2xl bg-slate-900/80 border border-white/10 min-w-[320px]">
-        “Their knowledge of both OT and IT is rare. Maintenance teams love the simplicity.”
-        <div class="text-sm text-cyan-300 mt-1">— Process Industry</div>
-      </div>
-
-      <div class="p-5 rounded-2xl bg-slate-900/80 border border-white/10 min-w-[320px]">
-        “We achieved visibility that we always wanted but never had.”
-        <div class="text-sm text-cyan-300 mt-1">— FMCG Plant</div>
-      </div>
-
-    </div>
-  </div>
-</section>
-
-<!-- ================== BLOG NEWS ================== -->
-<section class="max-w-7xl mx-auto px-4 py-10">
-  <h2 class="text-3xl font-bold text-center reveal">Latest Insights</h2>
-
-  <div class="grid md:grid-cols-3 gap-4 mt-4">
-    <div class="p-5 rounded-2xl bg-slate-900/80 border border-white/10 reveal">
-      Industry 4.0 — Beyond Buzzwords
-    </div>
-
-    <div class="p-5 rounded-2xl bg-slate-900/80 border border-white/10 reveal">
-      Why Retrofitting Beats Machine Replacement
-    </div>
-
-    <div class="p-5 rounded-2xl bg-slate-900/80 border border-white/10 reveal">
-      Energy Monitoring = Instant ROI
-    </div>
-  </div>
-</section>
-
-<!-- ================== CONTACT ================== -->
-<section id="contact" class="max-w-4xl mx-auto px-4 py-12 text-center">
-  <h2 class="text-3xl font-bold reveal">Request a Discussion</h2>
-
-  <form class="grid gap-3 mt-6 reveal">
-    <input class="p-3 rounded-xl bg-slate-900/80 border border-white/10" placeholder="Your Name" />
-    <input class="p-3 rounded-xl bg-slate-900/80 border border-white/10" placeholder="Email" />
-    <input class="p-3 rounded-xl bg-slate-900/80 border border-white/10" placeholder="Phone" />
-    <textarea class="p-3 rounded-xl bg-slate-900/80 border border-white/10" placeholder="Requirement"></textarea>
-    <button class="px-6 py-3 bg-cyan-400 rounded-full text-black font-semibold">Submit</button>
+  <form>
+    <input placeholder="Your Name" required />
+    <input placeholder="Email" required />
+    <input placeholder="Phone" required />
+    <textarea placeholder="Requirement"></textarea>
+    <button type="submit">Submit</button>
   </form>
+
 </section>
 
-<!-- ================== FOOTER ================== -->
-<footer class="bg-slate-900/80 border-t border-white/10 mt-10 py-8">
-  <div class="max-w-7xl mx-auto px-4 grid md:grid-cols-3 gap-6">
-    <div>
-      <h3 class="font-bold text-lg text-cyan-300">SGA Industrial Automations</h3>
-      <p>Where OT Meets IT</p>
-    </div>
+<a href="https://wa.me/917673902729" class="wa">💬</a>
 
-    <div>
-      <p>📍 India</p>
-      <p>📞 +91 76739 02729</p>
-      <p>✉️ info@sga.com</p>
-    </div>
-
-    <div class="flex gap-3">
-      <span>🌐</span>
-      <span>🔗</span>
-      <span>💬</span>
-    </div>
-  </div>
-</footer>
-
-<!-- WhatsApp Floating -->
-<a href="https://wa.me/917673902729" class="fixed bottom-6 right-6 bg-green-500 text-black w-14 h-14 rounded-full flex items-center justify-center text-2xl">💬</a>
-
-<!-- ================= SCRIPTS ================= -->
 <script>
-/* Particles */
+/* particles */
 const c=document.getElementById("particles");const ctx=c.getContext("2d");
 c.width=innerWidth;c.height=innerHeight;
-let p=[];for(let i=0;i<120;i++)p.push({x:Math.random()*c.width,y:Math.random()*c.height,dx:(Math.random()-.5),dy:(Math.random()-.5)});
-(function draw(){ctx.clearRect(0,0,c.width,c.height);ctx.fillStyle="#67e8f9";
-p.forEach(e=>{ctx.fillRect(e.x,e.y,2,2);e.x+=e.dx;e.y+=e.dy;if(e.x<0||e.x>c.width)e.dx*=-1;if(e.y<0||e.y>c.height)e.dy*=-1});requestAnimationFrame(draw)})();
+let P=[];for(let i=0;i<120;i++)P.push({x:Math.random()*c.width,y:Math.random()*c.height,dx:(Math.random()-.5),dy:(Math.random()-.5)});
+(function draw(){ctx.clearRect(0,0,c.width,c.height);ctx.fillStyle="#38bdf8";
+P.forEach(p=>{ctx.fillRect(p.x,p.y,2,2);p.x+=p.dx;p.y+=p.dy;if(p.x<0||p.x>c.width)p.dx*=-1;if(p.y<0||p.y>c.height)p.dy*=-1});requestAnimationFrame(draw)})();
 
-/* Counter Animation */
+/* orb */
+const orb=document.getElementById("orb");let ax=0,ay=0;
+setInterval(()=>{ax+=0.6;ay+=0.4;orb.style.transform=`rotateX(${ax}deg) rotateY(${ay}deg)`},30);
+
+/* counters */
 document.querySelectorAll(".num").forEach(el=>{let s=0,e=parseInt(el.dataset.val);let t=setInterval(()=>{s++;el.textContent=s;if(s===e)clearInterval(t)},25)});
 
-/* Auto carousel */
-const track=document.querySelector(".carousel-track");if(track){track.innerHTML+=track.innerHTML;track.style.animation="scroll 30s linear infinite";}
-
-/* 3D Orb rotation */
-const orb=document.getElementById("orb3d");
-let ax=0,ay=0;
-setInterval(()=>{ax+=0.4;ay+=0.3;orb.style.transform=`rotateX(${ax}deg) rotateY(${ay}deg)`},30);
-
-/* Scroll reveal */
-const observer=new IntersectionObserver(entries=>{
-entries.forEach(e=>{if(e.isIntersecting)e.target.classList.add("show")})},{threshold:.2});
-document.querySelectorAll(".reveal").forEach(el=>observer.observe(el));
+/* reveal */
+const io=new IntersectionObserver(ents=>ents.forEach(e=>{if(e.isIntersecting)e.target.classList.add("show")}),{threshold:.2});
+document.querySelectorAll(".reveal").forEach(el=>io.observe(el));
 </script>
 
 <style>
-.perspective-1000{perspective:1000px}
-.reveal{opacity:0;transform:translateY(30px);transition:.6s}
+body{background:#020617;color:white;margin:0;font-family:system-ui}
+#particles{position:fixed;inset:0;z-index:-1}
+.nav{position:sticky;top:0;background:#020617dd;border-bottom:1px solid #0f172a;backdrop-filter:blur(10px);z-index:5}
+.nav-inner{max-width:1100px;margin:auto;padding:10px 16px;display:flex;align-items:center;justify-content:space-between}
+.logo{color:#67e8f9;font-weight:700}
+nav a{margin:0 6px;text-decoration:none;color:#e5e7eb}
+.call-btn{background:#22d3ee;color:#000;padding:8px 14px;border-radius:999px;text-decoration:none}
+.hero{max-width:1100px;margin:30px auto;padding:20px;display:grid;grid-template-columns:1.1fr 0.9fr;gap:20px}
+.grad{background:linear-gradient(90deg,#38bdf8,#818cf8);-webkit-background-clip:text;color:transparent}
+.hero-right{position:relative}
+#orb{width:300px;height:300px;margin:auto;border-radius:50%;border:1px solid #38bdf8;box-shadow:0 0 80px #38bdf855;background:radial-gradient(circle,#0ea5e955,#020617 70%);transform-style:preserve-3d}
+.stat{position:absolute;background:#020617dd;border:1px solid #38bdf8;padding:6px 10px;border-radius:12px;font-size:.8rem}
+.top{top:0;left:0}
+.right{right:-20px;top:90px}
+.bottom{bottom:0;left:40px}
+.green{border-color:#22c55e}
+.tag{text-align:center;font-size:1.2rem;margin-top:10px;background:linear-gradient(90deg,#4ade80,#22d3ee);-webkit-background-clip:text;color:transparent}
+.counters{max-width:1000px;margin:20px auto;display:grid;grid-template-columns:repeat(4,1fr);gap:10px}
+.counter{background:#020617dd;border:1px solid #1e293b;border-radius:16px;padding:10px;text-align:center}
+.card-section{max-width:1100px;margin:20px auto}
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:10px}
+.card{background:#020617dd;border:1px solid #1e293b;padding:16px;border-radius:16px}
+.chips{text-align:center}
+.chips span{border:1px solid #334155;border-radius:999px;padding:4px 10px;margin:3px;display:inline-block}
+.testimonials{max-width:1000px;margin:20px auto;text-align:center}
+.carousel{display:flex;gap:10px;overflow:hidden}
+.tcard{min-width:280px;background:#020617dd;border:1px solid #1e293b;padding:14px;border-radius:16px}
+.contact{max-width:600px;margin:40px auto;text-align:center}
+form{display:grid;gap:8px}
+input,textarea{background:#020617cc;border:1px solid #1e293b;color:white;border-radius:12px;padding:10px}
+button{background:#22d3ee;border:0;border-radius:999px;padding:10px;color:#000;font-weight:700}
+.wa{position:fixed;right:20px;bottom:20px;background:#22c55e;width:55px;height:55px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:22px}
+.reveal{opacity:0;transform:translateY(20px);transition:.6s}
 .show{opacity:1;transform:translateY(0)}
-@keyframes scroll{0%{transform:translateX(0)}100%{transform:translateX(-50%)}}
+@media(max-width:900px){
+.hero{grid-template-columns:1fr}
+.counters{grid-template-columns:repeat(2,1fr)}
+.cards{grid-template-columns:1fr}
+}
 </style>
 
 </BaseLayout>
