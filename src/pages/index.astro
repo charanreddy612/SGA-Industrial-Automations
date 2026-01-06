@@ -1,266 +1,278 @@
----
+--- 
 import BaseLayout from "../layouts/BaseLayout.astro";
 ---
 
 <BaseLayout
-  title="SGA Industrial Automations | Industry 4.0 & Digital Transformation Specialists"
-  description="SGA Industrial Automations delivers Industry 4.0 automation, IIoT, SCADA, control panels, training programs and smart industrial digital transformation."
+  title="SGA Industrial Automations | Industry 4.0 & Advanced Automation Solutions"
+  description="SGA Industrial Automations delivers turnkey industrial automation, Industry 4.0, IIoT, SCADA and control panel solutions with real-time data visibility and performance optimization."
 >
 
 <!-- NAVBAR -->
-<header class="w-full py-4 sticky top-0 z-50 bg-slate-950/80 backdrop-blur border-b border-slate-800">
-  <div class="max-w-7xl mx-auto px-4 flex items-center justify-between">
-    <h1 class="text-xl font-bold text-cyan-400">SGA Industrial Automations</h1>
+<header class="top-nav">
+  <div class="top-nav-inner">
+    <div class="brand">SGA Industrial Automations</div>
 
-    <nav class="hidden md:flex gap-6 text-slate-200 text-sm">
-      <a href="/" class="hover:text-cyan-400">Home</a>
-      <a href="/about" class="hover:text-cyan-400">About</a>
-      <a href="#services" class="hover:text-cyan-400">Services</a>
-      <a href="/training" class="hover:text-cyan-400">Training</a>
-      <a href="#projects" class="hover:text-cyan-400">Projects</a>
-      <a href="#contact" class="hover:text-cyan-400">Contact</a>
+    <nav>
+      <a href="/">Home</a>
+      <a href="#solutions">Solutions</a>
+      <a href="#industries">Industries</a>
+      <a href="#training">Training</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
     </nav>
-
-    <a href="tel:+917673902729" class="hidden md:inline-flex px-4 py-2 rounded-full bg-cyan-400 text-black font-semibold">
-      Call: +91 76739 02729
-    </a>
   </div>
 </header>
 
+<section class="hero">
+  <div class="hero-text">
+    <p class="eyebrow">INDUSTRY 4.0 • AUTOMATION • IIOT • SCADA</p>
 
-<!-- HERO -->
-<section class="max-w-7xl mx-auto px-4 py-16 grid md:grid-cols-2 gap-10 items-center">
+    <h1>Engineering Smart, Connected and Future-Ready Industries</h1>
 
-  <!-- TEXT -->
-  <div>
-    <p class="text-xs tracking-[0.3em] uppercase text-slate-400">
-      Industry 4.0 • Automation • Digital Transformation
+    <p class="sub">
+      We modernize factories and process plants by integrating automation systems, real-time data,
+      IIoT connectivity and intelligent control panels — enabling higher productivity, visibility and reliability.
     </p>
 
-    <h2 class="text-4xl md:text-5xl font-bold mt-2 text-white">
-      Bridging Conventional Engineering with the Future of Technology
-    </h2>
-
-    <p class="mt-4 text-slate-300 text-lg">
-      We enable industries to transition from conventional systems to intelligent, connected and highly efficient operations through automation, IIoT and digital transformation solutions.
-    </p>
-
-    <div class="mt-6 flex flex-wrap gap-3">
-      <span class="px-4 py-2 rounded-full border border-cyan-400 text-cyan-300 text-sm">
-        Since 2025
-      </span>
-
-      <span class="px-4 py-2 rounded-full border border-emerald-400 text-emerald-300 text-sm">
-        Team with 15+ years cumulative experience
-      </span>
+    <div class="experience-badges">
+      <span class="badge">Since 2025</span>
+      <span class="badge badge-green">Team with 15+ years cumulative experience</span>
     </div>
 
-    <div class="flex flex-wrap gap-4 mt-6">
-      <a href="#contact" class="px-6 py-3 rounded-full bg-cyan-400 text-black font-semibold shadow">
-        Request a Discussion
+    <div class="hero-actions">
+      <a href="#contact" class="btn btn-primary">
+        ⚡ Request a Project Discussion
       </a>
 
-      <a href="tel:+917673902729" class="px-6 py-3 rounded-full border border-slate-600 text-white">
-        📞 +91 76739 02729
+      <a href="tel:+917673902729" class="btn btn-ghost">
+        📞 Call Now: +91 76739 02729
       </a>
     </div>
 
-    <div class="mt-6 flex flex-wrap gap-3 text-sm text-slate-300">
-      <span class="px-3 py-1 rounded-full border border-slate-700">Industry 4.0 & 5.0</span>
-      <span class="px-3 py-1 rounded-full border border-slate-700">IIoT & Smart Data</span>
-      <span class="px-3 py-1 rounded-full border border-slate-700">Energy Optimisation</span>
+    <div class="hero-meta">
+      <div class="meta-chip">
+        <span class="dot dot-green"></span>
+        <span>Machine & Line Automation</span>
+      </div>
+
+      <div class="meta-chip">
+        <span class="dot dot-blue"></span>
+        <span>SCADA & IIoT Dashboards</span>
+      </div>
+
+      <div class="meta-chip">
+        <span class="dot dot-amber"></span>
+        <span>Energy & Utility Monitoring</span>
+      </div>
     </div>
   </div>
 
-  <!-- FUTURISTIC ANIMATION -->
-  <div class="relative aspect-square max-w-md mx-auto">
-    <div class="absolute inset-0 rounded-full bg-cyan-400/10 blur-3xl animate-pulse"></div>
+  <div class="hero-visual">
+    <div class="grid-orbit"></div>
 
-    <div class="absolute inset-6 rounded-full border border-cyan-400 animate-spin-slow"></div>
+    <div class="robotic-core">
+      <div class="ring ring-outer"></div>
+      <div class="ring ring-middle"></div>
+      <div class="ring ring-inner"></div>
 
-    <div class="absolute inset-10 rounded-full border border-indigo-500 animate-spin-slower"></div>
+      <div class="robotic-arm">
+        <div class="arm-base"></div>
+        <div class="arm-segment arm-seg-1"></div>
+        <div class="arm-segment arm-seg-2"></div>
+        <div class="arm-head"></div>
+      </div>
 
-    <div class="absolute inset-16 ring-2 ring-cyan-400/40 rounded-full animate-ping"></div>
+      <div class="spark spark-1"></div>
+      <div class="spark spark-2"></div>
+      <div class="spark spark-3"></div>
 
-    <div class="absolute inset-24 grid grid-cols-3 gap-2 opacity-60">
-      <div class="w-2 h-2 bg-cyan-400 rounded-full animate-bounce"></div>
-      <div class="w-2 h-2 bg-emerald-400 rounded-full animate-bounce delay-200"></div>
-      <div class="w-2 h-2 bg-indigo-400 rounded-full animate-bounce delay-500"></div>
+      <div class="holo-card holo-top">
+        <p class="holo-label">OEE</p>
+        <p class="holo-value">92.4%</p>
+        <span class="holo-pill">Live Machine Data</span>
+      </div>
+
+      <div class="holo-card holo-right">
+        <p class="holo-label">Energy</p>
+        <p class="holo-value">−18%</p>
+        <span class="holo-pill">Optimized Usage</span>
+      </div>
+
+      <div class="holo-card holo-bottom">
+        <p class="holo-label">Status</p>
+        <p class="holo-value">All Lines Online</p>
+        <span class="holo-pill pill-green">Healthy</span>
+      </div>
     </div>
   </div>
 </section>
 
-
-<!-- CLIENT LOGO STRIP -->
-<section class="max-w-7xl mx-auto px-4 py-10">
-  <p class="text-center text-slate-400 text-sm uppercase tracking-widest">
-    Trusted by forward-thinking industries
-  </p>
-
-  <div class="mt-6 grid grid-cols-2 md:grid-cols-6 gap-6 grayscale opacity-80">
-    <div class="h-10 bg-slate-800 rounded"></div>
-    <div class="h-10 bg-slate-800 rounded"></div>
-    <div class="h-10 bg-slate-800 rounded"></div>
-    <div class="h-10 bg-slate-800 rounded"></div>
-    <div class="h-10 bg-slate-800 rounded"></div>
-    <div class="h-10 bg-slate-800 rounded"></div>
+<!-- CLIENT LOGOS -->
+<section class="section logo-strip">
+  <h2>Trusted by Forward-Looking Industries</h2>
+  <div class="logo-grid">
+    <div class="logo-box"></div>
+    <div class="logo-box"></div>
+    <div class="logo-box"></div>
+    <div class="logo-box"></div>
+    <div class="logo-box"></div>
+    <div class="logo-box"></div>
   </div>
-
-  <!-- Replace gray boxes above with logo images when ready -->
 </section>
 
-
-<!-- ABOUT -->
-<section id="about" class="max-w-7xl mx-auto px-4 py-12 grid md:grid-cols-2 gap-10">
-  <div class="bg-slate-900/70 border border-slate-700 rounded-2xl p-6 shadow-xl">
-    <p class="text-xs uppercase tracking-widest text-slate-400">About Us</p>
-
-    <h3 class="text-2xl text-white font-semibold mt-1">
-      A Premier Industry 4.0 System Integration Company
-    </h3>
-
-    <p class="text-slate-300 mt-3">
-      Founded in 2025, SGA Industrial Automations combines conventional engineering excellence with smart digital technologies to deliver end-to-end Industry 4.0 & 5.0 solutions.
+<!-- WHAT WE DO -->
+<section class="section stats">
+  <div class="stat-card">
+    <span class="stat-label">What We Deliver</span>
+    <h2>End-to-End Industrial Automation & Digitalization</h2>
+    <p>
+      From PLC programming and SCADA implementation to complete panel manufacturing and on-site commissioning —
+      we design, engineer and deliver turnkey automation solutions for OEMs and process plants.
     </p>
-
-    <p class="text-slate-300 mt-3">
-      Our team brings more than 15+ years of cumulative hands-on experience across automation, SCADA, control systems and industrial digitalization projects.
-    </p>
   </div>
 
-  <div class="grid gap-4">
-    <div class="p-5 rounded-2xl border border-slate-700 bg-slate-900/60">
-      <h4 class="text-white font-semibold">OT + IT Convergence</h4>
-      <p class="text-slate-300">Connecting machines with enterprise platforms.</p>
+  <div class="stat-grid">
+    <div class="stat-mini">
+      <p class="stat-number">PLC • SCADA • IIoT</p>
+      <p class="stat-text">Integrated control architecture for machines and process lines.</p>
     </div>
 
-    <div class="p-5 rounded-2xl border border-slate-700 bg-slate-900/60">
-      <h4 class="text-white font-semibold">Sustainable Engineering</h4>
-      <p class="text-slate-300">Improving energy usage and operational efficiency.</p>
+    <div class="stat-mini">
+      <p class="stat-number">Panels & Retrofits</p>
+      <p class="stat-text">Design & upgrades for MCC, PCC, PLC & VFD panels.</p>
+    </div>
+
+    <div class="stat-mini">
+      <p class="stat-number">Data & Energy Analytics</p>
+      <p class="stat-text">Real-time dashboards for OEE, downtime and consumption.</p>
     </div>
   </div>
 </section>
 
+<!-- SOLUTIONS -->
+<section id="solutions" class="section section-cards">
+  <div class="section-header">
+    <h2>Key Solutions & Expertise</h2>
+    <p>Designed for real-world machines, lines and manufacturing plants.</p>
+  </div>
 
-<!-- SERVICES -->
-<section id="services" class="max-w-7xl mx-auto px-4 py-12">
-  <h3 class="text-3xl text-white font-bold">Our Core Expertise</h3>
-  <p class="text-slate-400">End-to-end automation and digital transformation solutions.</p>
-
-  <div class="grid md:grid-cols-3 gap-6 mt-6">
-    <div class="p-6 rounded-2xl border border-slate-700 bg-slate-900/60">
-      <h4 class="text-white font-semibold">Industrial Automation</h4>
-      <ul class="text-slate-300 mt-2">
-        <li>• PLC & HMI programming</li>
-        <li>• Machine & line automation</li>
-        <li>• Retrofits & upgrades</li>
+  <div class="cards-grid">
+    <article class="card">
+      <h3>Machine & Line Automation</h3>
+      <p>PLC, HMI, servo and motion-control solutions for machines & production lines.</p>
+      <ul>
+        <li>PLC & HMI programming</li>
+        <li>Retrofit of legacy machines</li>
+        <li>Safety & interlock logic</li>
       </ul>
-    </div>
+    </article>
 
-    <div class="p-6 rounded-2xl border border-slate-700 bg-slate-900/60">
-      <h4 class="text-white font-semibold">IIoT & Data Visibility</h4>
-      <ul class="text-slate-300 mt-2">
-        <li>• OEE analytics</li>
-        <li>• Energy dashboards</li>
-        <li>• Cloud connectivity</li>
+    <article class="card">
+      <h3>IIoT & Digital Transformation</h3>
+      <p>Industrial connectivity and dashboards for informed decision-making.</p>
+      <ul>
+        <li>OEE & downtime analytics</li>
+        <li>Cloud & edge connectivity</li>
+        <li>Alerts and reporting</li>
       </ul>
-    </div>
+    </article>
 
-    <div class="p-6 rounded-2xl border border-slate-700 bg-slate-900/60">
-      <h4 class="text-white font-semibold">Control Panel Engineering</h4>
-      <ul class="text-slate-300 mt-2">
-        <li>• MCC / PCC / PLC / VFD panels</li>
-        <li>• Design & schematics</li>
-        <li>• Commissioning & service</li>
+    <article class="card">
+      <h3>Control Panel Engineering</h3>
+      <p>Engineered MCC, PCC, PLC and VFD panels with documentation & FAT/SAT.</p>
+      <ul>
+        <li>Design & schematics</li>
+        <li>Testing & trials</li>
+        <li>On-site commissioning</li>
       </ul>
+    </article>
+  </div>
+</section>
+
+<!-- TRAINING SECTION -->
+<section id="training" class="section">
+  <div class="section-header">
+    <h2>Training & Internship Programs</h2>
+    <p>Industry-oriented learning designed by practicing automation engineers.</p>
+  </div>
+
+  <div class="stat-grid">
+    <div class="stat-mini">
+      <p class="stat-number">PLC & SCADA Training</p>
+      <p class="stat-text">Hands-on learning using real industrial controllers.</p>
+    </div>
+    <div class="stat-mini">
+      <p class="stat-number">Industrial Internship</p>
+      <p class="stat-text">Live project exposure & wiring/commissioning practice.</p>
+    </div>
+    <div class="stat-mini">
+      <p class="stat-number">IIoT & Data Analytics</p>
+      <p class="stat-text">Cloud dashboards, data acquisition & OEE.</p>
     </div>
   </div>
 </section>
 
-
-<!-- TRAINING -->
-<section id="training" class="max-w-7xl mx-auto px-4 py-12">
-  <h3 class="text-3xl text-white font-bold">Training & Internship Programs</h3>
-  <p class="text-slate-400">Real-time, industry-oriented learning pathways.</p>
-
-  <div class="grid md:grid-cols-3 gap-6 mt-6">
-    <div class="p-6 rounded-2xl border border-slate-700 bg-slate-900/60">
-      <h4 class="text-white font-semibold">PLC & SCADA Training</h4>
-      <p class="text-slate-300">Hands-on with real industrial PLCs.</p>
-    </div>
-
-    <div class="p-6 rounded-2xl border border-slate-700 bg-slate-900/60">
-      <h4 class="text-white font-semibold">Industrial Automation Internship</h4>
-      <p class="text-slate-300">Live projects with expert mentoring.</p>
-    </div>
-
-    <div class="p-6 rounded-2xl border border-slate-700 bg-slate-900/60">
-      <h4 class="text-white font-semibold">IIoT & Digitalization Program</h4>
-      <p class="text-slate-300">Dashboards, data and cloud integration.</p>
-    </div>
+<!-- PROJECT STRIP -->
+<section id="projects" class="section">
+  <div class="section-header">
+    <h2>Recent Projects & Case Studies</h2>
+    <p>Delivered measurable business outcomes for our clients.</p>
   </div>
 </section>
 
+<!-- INDUSTRIES -->
+<section id="industries" class="section industries">
+  <div class="section-header">
+    <h2>Industries We Serve</h2>
+    <p>Solutions designed for continuous production environments.</p>
+  </div>
 
-<!-- PROJECTS -->
-<section id="projects" class="max-w-7xl mx-auto px-4 py-12">
-  <h3 class="text-3xl text-white font-bold">Projects & Case Studies</h3>
-  <p class="text-slate-400">Deployments that delivered measurable results.</p>
-
-  <div class="grid md:grid-cols-3 gap-6 mt-6">
-    <div class="p-6 rounded-2xl border border-slate-700 bg-slate-900/60">
-      <h4 class="text-white font-semibold">OEE Implementation</h4>
-      <p class="text-slate-300">Improved packaging line productivity by 18%.</p>
-    </div>
-
-    <div class="p-6 rounded-2xl border border-slate-700 bg-slate-900/60">
-      <h4 class="text-white font-semibold">Energy Monitoring</h4>
-      <p class="text-slate-300">Reduced plant energy consumption by 22%.</p>
-    </div>
-
-    <div class="p-6 rounded-2xl border border-slate-700 bg-slate-900/60">
-      <h4 class="text-white font-semibold">Legacy Machine Retrofit</h4>
-      <p class="text-slate-300">Converted conventional systems to smart assets.</p>
-    </div>
+  <div class="industry-chips">
+    <span>Automotive</span>
+    <span>Food & Beverage</span>
+    <span>Pharma</span>
+    <span>Water & Wastewater</span>
+    <span>Textile</span>
+    <span>Power & Utilities</span>
   </div>
 </section>
-
-
-<!-- WHATSAPP FLOAT BUTTON -->
-<a
-  href="https://wa.me/917673902729"
-  class="fixed bottom-6 right-6 bg-emerald-500 text-white w-14 h-14 rounded-full flex items-center justify-center shadow-xl hover:scale-110 transition"
-  aria-label="Chat on WhatsApp"
->
-  💬
-</a>
-
 
 <!-- FOOTER -->
-<footer id="contact" class="mt-16 py-10 bg-slate-950 border-t border-slate-800">
-  <div class="max-w-7xl mx-auto px-4 grid md:grid-cols-3 gap-6 text-slate-300">
-    <div>
-      <h4 class="text-white font-bold text-lg">SGA Industrial Automations</h4>
-      <p>Engineering Efficiency. Delivering Sustainability.</p>
-    </div>
-
-    <div>
-      <p>📞 +91 76739 02729</p>
-      <p>📧 sga@sgaautomations.com</p>
-      <p>📍 India</p>
-    </div>
-
-    <div>
-      <p class="font-semibold text-white">Follow Us</p>
-      <p>🔗 LinkedIn</p>
-      <p>🔗 Instagram</p>
-      <p>🔗 Facebook</p>
-    </div>
+<section id="contact" class="section">
+  <div class="stat-card">
+    <h2>Let’s Build Your Next Automation Project</h2>
+    <p>Call or message us — we respond quickly.</p>
+    <p><strong>📞 +91 76739 02729</strong></p>
   </div>
+</section>
 
-  <p class="text-center text-slate-500 mt-6 text-sm">
-    © 2026 SGA Industrial Automations — All Rights Reserved
-  </p>
-</footer>
+<!-- WHATSAPP -->
+<a href="https://wa.me/917673902729" class="wa-btn">💬</a>
+
+<style>
+/* Existing CSS preserved — plus small additions */
+
+/* nav */
+.top-nav{position:sticky;top:0;z-index:50;background:#020617d9;
+backdrop-filter:blur(10px);border-bottom:1px solid #1e293b;}
+.top-nav-inner{max-width:1200px;margin:auto;padding:0.6rem 1rem;
+display:flex;align-items:center;justify-content:space-between;}
+.top-nav nav a{color:#e5e7eb;margin-left:1rem;text-decoration:none;}
+.brand{color:#22d3ee;font-weight:700;}
+
+/* experience badges */
+.experience-badges{margin-top:1rem;display:flex;gap:0.6rem;flex-wrap:wrap;}
+.badge{padding:.35rem .8rem;border-radius:999px;border:1px solid #38bdf8;}
+.badge-green{border-color:#22c55e;color:#bbf7d0}
+
+/* logo strip */
+.logo-grid{display:grid;grid-template-columns:repeat(6,1fr);gap:.8rem}
+.logo-box{background:#0f172a;border:1px solid #1e293b;border-radius:12px;height:46px}
+
+/* whatsapp */
+.wa-btn{position:fixed;right:18px;bottom:18px;background:#22c55e;
+width:56px;height:56px;border-radius:50%;display:flex;align-items:center;
+justify-content:center;font-size:22px}
+</style>
 
 </BaseLayout>
