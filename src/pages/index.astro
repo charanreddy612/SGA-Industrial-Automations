@@ -58,6 +58,58 @@ import BaseLayout from "../layouts/BaseLayout.astro";
   Engineering Efficiency. Delivering Sustainability.
 </section>
 
+<!-- ⭐⭐⭐ ABOUT – GLOWING PREMIUM CARD -->
+<section id="about" class="about-glow reveal">
+
+  <div class="about-box">
+
+    <h2>About SGA Industrial Automations</h2>
+
+    <p class="tagline">Bridging Conventional Engineering with the Future of Technology</p>
+
+    <p>
+      A Premier Industry 4.0 Integration Company since 2025 with 15+ years of experience.
+    </p>
+
+    <p>
+      At SGA Industrial Automations, we believe in a <strong>"Full Stack"</strong> approach.
+      We combine deep conventional engineering expertise with the agility of future-ready
+      digital technologies.
+    </p>
+
+    <p>
+      Our mission is to bridge the gap between
+      <strong>Operational Technology (OT)</strong> and
+      <strong>Information Technology (IT)</strong>.
+    </p>
+
+    <p>
+      We design and implement customized automation solutions across Agriculture, Mining,
+      Pharma, Food Processing, Manufacturing, Textile, Power and more.
+    </p>
+
+    <p>
+      Our focus is on transforming legacy systems into
+      <strong>smart, connected and highly efficient operations.</strong>
+    </p>
+
+  </div>
+
+</section>
+
+<!-- ⭐⭐⭐ CLIENTS STRIP -->
+<section class="clients reveal">
+  <h2>Our Clients</h2>
+
+  <div class="client-strip">
+    <span>Client 1</span>
+    <span>Client 2</span>
+    <span>Client 3</span>
+    <span>Client 4</span>
+    <span>Client 5</span>
+  </div>
+</section>
+
 <section class="counters">
 
   <div class="counter">
@@ -95,18 +147,20 @@ import BaseLayout from "../layouts/BaseLayout.astro";
 
 </section>
 
-<section id="industries" class="chips">
+<!-- ⭐⭐⭐ TRAINING SECTION -->
+<section id="training" class="card-section">
 
-  <h2>Industries We Serve</h2>
+  <h2>Industrial Automation Training</h2>
 
-  <div>
-    <span>Pharmaceutical</span>
-    <span>Food Processing</span>
-    <span>Automotive</span>
-    <span>Manufacturing</span>
-    <span>Power</span>
-    <span>Textile</span>
-    <span>Water & Wastewater</span>
+  <div class="cards">
+
+    <div class="card reveal">PLC Programming</div>
+    <div class="card reveal">SCADA & HMI Development</div>
+    <div class="card reveal">VFD & Servo Drives</div>
+    <div class="card reveal">Industrial Networking</div>
+    <div class="card reveal">IIoT & MQTT</div>
+    <div class="card reveal">Control Panel Design</div>
+
   </div>
 
 </section>
@@ -177,7 +231,6 @@ body{background:#020617;color:white;margin:0;font-family:system-ui}
 .nav{position:sticky;top:0;background:#020617dd;border-bottom:1px solid #0f172a;backdrop-filter:blur(10px);z-index:5}
 .nav-inner{max-width:1100px;margin:auto;padding:10px 16px;display:flex;align-items:center;justify-content:space-between}
 .logo{color:#67e8f9;font-weight:700}
-nav a{margin:0 6px;text-decoration:none;color:#e5e7eb}
 .call-btn{background:#22d3ee;color:#000;padding:8px 14px;border-radius:999px;text-decoration:none}
 .hero{max-width:1100px;margin:30px auto;padding:20px;display:grid;grid-template-columns:1.1fr 0.9fr;gap:20px}
 .grad{background:linear-gradient(90deg,#38bdf8,#818cf8);-webkit-background-clip:text;color:transparent}
@@ -189,6 +242,46 @@ nav a{margin:0 6px;text-decoration:none;color:#e5e7eb}
 .bottom{bottom:0;left:40px}
 .green{border-color:#22c55e}
 .tag{text-align:center;font-size:1.2rem;margin-top:10px;background:linear-gradient(90deg,#4ade80,#22d3ee);-webkit-background-clip:text;color:transparent}
+
+/* ⭐ About glowing box */
+.about-glow{max-width:1100px;margin:40px auto;padding:6px}
+.about-box{
+  padding:28px;
+  border-radius:22px;
+  background:#020617;
+  border:1px solid #38bdf8;
+  box-shadow:0 0 30px #38bdf822, inset 0 0 20px #38bdf811;
+  position:relative;
+  overflow:hidden;
+  animation:floatBox 6s ease-in-out infinite;
+}
+.about-box::before{
+  content:"";
+  position:absolute;
+  inset:-2px;
+  border-radius:22px;
+  padding:2px;
+  background:linear-gradient(120deg,#38bdf8,#818cf8,#22d3ee,#4ade80);
+  -webkit-mask:linear-gradient(#000 0 0) content-box,linear-gradient(#000 0 0);
+  -webkit-mask-composite:xor;
+          mask-composite:exclude;
+  animation:borderGlow 8s linear infinite;
+}
+.about-box h2{
+  text-align:center;
+  background:linear-gradient(90deg,#38bdf8,#818cf8);
+  -webkit-background-clip:text;
+  color:transparent;
+}
+.about-box .tagline{text-align:center;color:#a5f3fc;font-style:italic}
+
+.clients{max-width:1000px;margin:20px auto;text-align:center}
+.client-strip{display:flex;gap:10px;justify-content:center;flex-wrap:wrap}
+.client-strip span{border:1px solid #1e293b;border-radius:12px;padding:8px 14px}
+
+@keyframes borderGlow{0%{filter:hue-rotate(0)}100%{filter:hue-rotate(360deg)}}
+@keyframes floatBox{0%,100%{transform:translateY(0)}50%{transform:translateY(-6px)}}
+
 .counters{max-width:1000px;margin:20px auto;display:grid;grid-template-columns:repeat(4,1fr);gap:10px}
 .counter{background:#020617dd;border:1px solid #1e293b;border-radius:16px;padding:10px;text-align:center}
 .card-section{max-width:1100px;margin:20px auto}
@@ -198,19 +291,4 @@ nav a{margin:0 6px;text-decoration:none;color:#e5e7eb}
 .chips span{border:1px solid #334155;border-radius:999px;padding:4px 10px;margin:3px;display:inline-block}
 .testimonials{max-width:1000px;margin:20px auto;text-align:center}
 .carousel{display:flex;gap:10px;overflow:hidden}
-.tcard{min-width:280px;background:#020617dd;border:1px solid #1e293b;padding:14px;border-radius:16px}
-.contact{max-width:600px;margin:40px auto;text-align:center}
-form{display:grid;gap:8px}
-input,textarea{background:#020617cc;border:1px solid #1e293b;color:white;border-radius:12px;padding:10px}
-button{background:#22d3ee;border:0;border-radius:999px;padding:10px;color:#000;font-weight:700}
-.wa{position:fixed;right:20px;bottom:20px;background:#22c55e;width:55px;height:55px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:22px}
-.reveal{opacity:0;transform:translateY(20px);transition:.6s}
-.show{opacity:1;transform:translateY(0)}
-@media(max-width:900px){
-.hero{grid-template-columns:1fr}
-.counters{grid-template-columns:repeat(2,1fr)}
-.cards{grid-template-columns:1fr}
-}
-</style>
-
-</BaseLayout>
+.tcard{min-width:280px;background:
