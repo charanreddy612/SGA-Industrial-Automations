@@ -1,335 +1,547 @@
 ---
-import BaseLayout from "../layouts/BaseLayout.astro";
+// SGA Industrial Automations - Premium Futuristic Design
+// Astro Index Page
 ---
 
-<BaseLayout
-  title="SGA Industrial Automations | Industry 4.0 & 5.0 Automation, IIoT, SCADA, Smart Manufacturing"
-  description="SGA Industrial Automations bridges conventional engineering with future technologies — Industry 4.0 & 5.0 system integration, PLC, SCADA, IIoT dashboards, smart panels, training & digital transformation."
->
-
-<canvas id="particles"></canvas>
-
-<header class="nav">
-  <div class="nav-inner">
-    <div class="logo">SGA Industrial Automations</div>
-    <a href="tel:+917673902729" class="call-btn">📞 +91 76739 02729</a>
-  </div>
-</header>
-
-<section class="hero">
-
-  <div class="hero-left reveal">
-
-    <p class="eyebrow">INDUSTRY 4.0 • 5.0 • AUTOMATION • IIOT • SCADA • DIGITAL FACTORY</p>
-
-    <h1>
-      Bridging Conventional Engineering<br />
-      <span class="grad">with the Future of Technology</span>
-    </h1>
-
-    <p>
-      Premier Industry 4.0 & 5.0 Automation System Integrator since 2025,
-      powered by 15+ years of cumulative experience. We convert legacy infrastructure
-      into smart, connected and sustainable operations.
-    </p>
-
-    <p class="mission">
-      Mission: <strong>Bridging Operational Technology (OT) & Information Technology (IT)</strong>
-    </p>
-
-    <div class="cta">
-      <a href="#contact" class="btn-primary">⚡ Start Your Automation Journey</a>
-      <a href="#about" class="btn-outline">Learn More</a>
-    </div>
-
-  </div>
-
-  <div class="hero-right reveal">
-    <div id="orb"></div>
-
-    <div class="stat top">OEE 92.4%</div>
-    <div class="stat right">Energy −18%</div>
-    <div class="stat bottom green">All Lines Online</div>
-  </div>
-
-</section>
-
-<section class="tag reveal">
-  Engineering Efficiency. Delivering Sustainability.
-</section>
-
-<!-- ⭐ ABOUT – GLOW GLASS BOX -->
-<section id="about" class="about-glow reveal">
-
-  <div class="about-box">
-
-    <h2>About SGA Industrial Automations</h2>
-
-    <p class="tagline">Bridging Conventional Engineering with the Future of Technology</p>
-
-    <p>
-      A Premier Industry 4.0 Integration Company since 2025 with 15+ years of experience.
-    </p>
-
-    <p>
-      At SGA Industrial Automations, we believe in a <strong>"Full Stack"</strong> approach.
-      We combine deep conventional engineering expertise with the agility of future-ready
-      digital technologies.
-    </p>
-
-    <p>
-      Our mission is to bridge the gap between
-      <strong>Operational Technology (OT)</strong> and
-      <strong>Information Technology (IT)</strong>.
-    </p>
-
-    <p>
-      We design and implement customized automation solutions across Agriculture, Mining,
-      Pharma, Food Processing, Manufacturing, Textile, Power and more.
-    </p>
-
-    <p>
-      Our focus is on transforming legacy systems into
-      <strong>smart, connected and highly efficient operations.</strong>
-    </p>
-
-  </div>
-
-</section>
-
-<!-- ⭐ CLIENTS STRIP -->
-<section class="clients reveal">
-  <h2>Our Clients</h2>
-
-  <div class="client-strip">
-    <span>Client 1</span>
-    <span>Client 2</span>
-    <span>Client 3</span>
-    <span>Client 4</span>
-    <span>Client 5</span>
-  </div>
-</section>
-
-<section class="counters">
-
-  <div class="counter">
-    <span class="num" data-val="15">0</span>+ Years Experience
-  </div>
-
-  <div class="counter">
-    <span class="num" data-val="120">0</span>+ Projects Delivered
-  </div>
-
-  <div class="counter">
-    <span class="num" data-val="40">0</span>+ Industrial Clients
-  </div>
-
-  <div class="counter">
-    <span class="num" data-val="12">0</span>+ Industry Segments
-  </div>
-
-</section>
-
-<section id="solutions" class="card-section">
-
-  <h2>Full-Stack Automation & Digital Solutions</h2>
-
-  <div class="cards">
-
-    <div class="card reveal">Industrial Automation</div>
-    <div class="card reveal">SCADA / HMI Systems</div>
-    <div class="card reveal">IIoT & Smart Manufacturing</div>
-    <div class="card reveal">Smart Control Panels</div>
-    <div class="card reveal">Energy Monitoring</div>
-    <div class="card reveal">Retrofit & Modernization</div>
-
-  </div>
-
-</section>
-
-<!-- ⭐ TRAINING -->
-<section id="training" class="card-section">
-
-  <h2>Industrial Automation Training</h2>
-
-  <div class="cards">
-
-    <div class="card reveal">PLC Programming</div>
-    <div class="card reveal">SCADA & HMI Development</div>
-    <div class="card reveal">VFD & Servo Drives</div>
-    <div class="card reveal">Industrial Networking</div>
-    <div class="card reveal">IIoT & MQTT</div>
-    <div class="card reveal">Control Panel Design</div>
-
-  </div>
-
-</section>
-
-<section class="testimonials">
-
-  <h2>Client Words</h2>
-
-  <p class="sub">*Sample testimonials — real testimonials will be added*</p>
-
-  <div class="carousel">
-
-    <div class="tcard">
-      “SGA didn’t just automate machines — they improved how our factory thinks.”
-    </div>
-
-    <div class="tcard">
-      “Rare expertise in both OT & IT. Maintenance team loves the simplicity.”
-    </div>
-
-    <div class="tcard">
-      “We finally have the visibility we always wanted.”
-    </div>
-
-  </div>
-
-</section>
-
-<section id="contact" class="contact">
-
-  <h2>Request a Discussion</h2>
-
-  <form>
-    <input placeholder="Your Name" required />
-    <input placeholder="Email" required />
-    <input placeholder="Phone" required />
-    <textarea placeholder="Requirement"></textarea>
-    <button type="submit">Submit</button>
-  </form>
-
-</section>
-
-<a href="https://wa.me/917673902729" class="wa">💬</a>
-
-<script>
-/* particles */
-const c=document.getElementById("particles");const ctx=c.getContext("2d");
-c.width=innerWidth;c.height=innerHeight;
-let P=[];for(let i=0;i<120;i++)P.push({x:Math.random()*c.width,y:Math.random()*c.height,dx:(Math.random()-.5),dy:(Math.random()-.5)});
-(function draw(){ctx.clearRect(0,0,c.width,c.height);ctx.fillStyle="#38bdf8";
-P.forEach(p=>{ctx.fillRect(p.x,p.y,2,2);p.x+=p.dx;p.y+=p.dy;if(p.x<0||p.x>c.width)p.dx*=-1;if(p.y<0||p.y>c.height)p.dy*=-1});requestAnimationFrame(draw)})();
-
-/* orb */
-const orb=document.getElementById("orb");let ax=0,ay=0;
-setInterval(()=>{ax+=0.6;ay+=0.4;orb.style.transform=`rotateX(${ax}deg) rotateY(${ay}deg)`},30);
-
-/* counters */
-document.querySelectorAll(".num").forEach(el=>{let s=0,e=parseInt(el.dataset.val);let t=setInterval(()=>{s++;el.textContent=s;if(s===e)clearInterval(t)},25)});
-
-/* reveal */
-const io=new IntersectionObserver(ents=>ents.forEach(e=>{if(e.isIntersecting)e.target.classList.add("show")}),{threshold:.2});
-document.querySelectorAll(".reveal").forEach(el=>io.observe(el));
-</script>
-
-<style>
-body{background:#020617;color:white;margin:0;font-family:system-ui}
-#particles{position:fixed;inset:0;z-index:-1}
-.nav{position:sticky;top:0;background:#020617dd;border-bottom:1px solid #0f172a;backdrop-filter:blur(10px);z-index:5}
-.nav-inner{max-width:1100px;margin:auto;padding:10px 16px;display:flex;align-items:center;justify-content:space-between}
-.logo{color:#67e8f9;font-weight:700}
-.call-btn{background:#22d3ee;color:#000;padding:8px 14px;border-radius:999px;text-decoration:none;transition:.25s}
-
-/* premium button glow */
-.call-btn,.btn-primary,button{
-  box-shadow:0 0 18px #22d3ee55;
-}
-.call-btn:hover,.btn-primary:hover,button:hover{
-  box-shadow:0 0 28px #22d3eeaa;
-  transform:translateY(-2px);
-}
-
-.hero{max-width:1100px;margin:30px auto;padding:20px;display:grid;grid-template-columns:1.1fr 0.9fr;gap:20px}
-.grad{background:linear-gradient(90deg,#38bdf8,#818cf8);-webkit-background-clip:text;color:transparent}
-.hero-right{position:relative}
-
-/* orb */
-#orb{width:300px;height:300px;margin:auto;border-radius:50%;border:1px solid #38bdf8;box-shadow:0 0 80px #38bdf855;background:radial-gradient(circle,#0ea5e955,#020617 70%);transform-style:preserve-3d}
-
-/* 3D stat pills */
-.stat{
-  position:absolute;background:#020617dd;border:1px solid #38bdf8;padding:6px 10px;border-radius:12px;font-size:.8rem;
-  box-shadow:inset 0 0 10px #0ea5e9aa,0 0 20px #38bdf822;backdrop-filter:blur(4px)
-}
-
-.top{top:0;left:0}
-.right{right:-20px;top:90px}
-.bottom{bottom:0;left:40px}
-.green{border-color:#22c55e}
-
-/* headline underline animation */
-h2{position:relative;text-align:center}
-h2::after{
-  content:"";display:block;width:80px;height:3px;margin:8px auto 0;
-  background:linear-gradient(90deg,#38bdf8,#818cf8);border-radius:999px;
-  animation:glowline 4s infinite alternate
-}
-@keyframes glowline{from{box-shadow:0 0 8px #38bdf8}to{box-shadow:0 0 18px #818cf8}}
-
-/* about glow glass box */
-.about-glow{max-width:1100px;margin:40px auto;padding:6px}
-.about-box{
-  padding:28px;border-radius:22px;background:#020617;border:1px solid #38bdf8;
-  box-shadow:inset 0 0 45px #0ea5e922,0 0 55px #38bdf822;
-  position:relative;overflow:hidden;animation:floatBox 6s ease-in-out infinite
-}
-.about-box .tagline{text-align:center;color:#a5f3fc;font-style:italic}
-
-/* glass effect for cards/counters */
-.card,
-.counter,
-.tcard,
-.client-strip span,
-.cards .card{
-  background:linear-gradient(145deg,#020617e6,#020617aa);
-  border:1px solid #1e3a8a66;
-  backdrop-filter:blur(6px);
-  transition:.25s
-}
-
-/* hover lift */
-.card:hover,
-.counter:hover,
-.client-strip span:hover{
-  box-shadow:0 0 18px #38bdf833;
-  transform:translateY(-3px)
-}
-
-/* micro reveal animation */
-.reveal{opacity:0;transform:translateY(30px) scale(.98);transition:.7s}
-.show{opacity:1;transform:translateY(0) scale(1)}
-
-.clients{max-width:1000px;margin:20px auto;text-align:center}
-.client-strip{display:flex;gap:10px;justify-content:center;flex-wrap:wrap}
-.client-strip span{border-radius:12px;padding:8px 14px}
-
-@keyframes borderGlow{0%{filter:hue-rotate(0)}100%{filter:hue-rotate(360deg)}}
-@keyframes floatBox{0%,100%{transform:translateY(0)}50%{transform:translateY(-6px)}}
-
-.counters{max-width:1000px;margin:20px auto;display:grid;grid-template-columns:repeat(4,1fr);gap:10px}
-.card-section{max-width:1100px;margin:20px auto}
-.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:10px}
-.chips{text-align:center}
-.testimonials{max-width:1000px;margin:20px auto;text-align:center}
-.carousel{display:flex;gap:10px;overflow:hidden}
-.contact{max-width:600px;margin:40px auto;text-align:center}
-form{display:grid;gap:8px}
-
-input,textarea{
-  background:#020617cc;border:1px solid #1e293b;color:white;border-radius:12px;padding:10px
-}
-
-button{border:0;border-radius:999px;padding:10px;color:#000;font-weight:700}
-.wa{position:fixed;right:20px;bottom:20px;background:#22c55e;width:55px;height:55px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:22px}
-
-@media(max-width:900px){
-.hero{grid-template-columns:1fr}
-.counters{grid-template-columns:repeat(2,1fr)}
-.cards{grid-template-columns:1fr}
-}
-</style>
-
-</BaseLayout>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SGA Industrial Automations | Industry 4.0 & 5.0 Solutions</title>
+    <meta name="description" content="Leading provider of Industry 4.0 & 5.0 automation solutions, IIoT, SCADA, and smart manufacturing systems.">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-content">
+                <div class="logo-section">
+                    <div class="logo-icon">SGA</div>
+                    <div class="logo-text">
+                        <span class="logo-main">SGA Industrial</span>
+                        <span class="logo-sub">Automations</span>
+                    </div>
+                </div>
+                <div class="nav-links">
+                    <a href="#home" class="nav-link">Home</a>
+                    <a href="#about" class="nav-link">About</a>
+                    <a href="#evolution" class="nav-link">Evolution</a>
+                    <a href="#solutions" class="nav-link">Solutions</a>
+                    <a href="#training" class="nav-link">Training</a>
+                    <a href="#contact" class="nav-link">Contact</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-bg"></div>
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="hero-title">
+                    <span class="title-line">Transforming Manufacturing</span>
+                    <span class="title-line gradient-text">into Smart Ecosystems</span>
+                </h1>
+                <p class="hero-subtitle">Industry 4.0 & 5.0 Automation | IIoT | SCADA | OT-IT Integration</p>
+                <div class="hero-buttons">
+                    <a href="#contact" class="btn btn-primary">Get Started</a>
+                    <a href="#solutions" class="btn btn-secondary">Explore Solutions</a>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="scroll-line"></div>
+        </div>
+    </section>
+
+    <!-- Tagline -->
+    <section class="tagline">
+        <div class="container">
+            <p class="tagline-text">Pioneering the Future of Smart Manufacturing with Cutting-Edge Automation Solutions</p>
+        </div>
+    </section>
+
+    <!-- About Us -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">Who We Are</span>
+                <h2 class="section-title">About SGA Industrial Automations</h2>
+            </div>
+            <div class="about-card glass-card">
+                <div class="about-content">
+                    <p class="about-text">
+                        SGA Industrial Automations is a leading consulting and implementation partner specializing in Industry 4.0 and 5.0 transformation. We empower manufacturing enterprises to achieve operational excellence through intelligent automation, real-time data analytics, and seamless OT-IT convergence.
+                    </p>
+                    <p class="about-text">
+                        Our team of seasoned engineers and consultants brings decades of combined experience in SCADA systems, Industrial IoT, PLC programming, edge computing, and smart factory design. We don't just implement technology—we architect future-ready manufacturing ecosystems that drive measurable ROI.
+                    </p>
+                    <div class="about-features">
+                        <div class="feature-item">
+                            <div class="feature-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                                </svg>
+                            </div>
+                            <span>ISO Certified Excellence</span>
+                        </div>
+                        <div class="feature-item">
+                            <div class="feature-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M13 10V3L4 14h7v7l9-11h-7z"/>
+                                </svg>
+                            </div>
+                            <span>24/7 Technical Support</span>
+                        </div>
+                        <div class="feature-item">
+                            <div class="feature-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z"/>
+                                </svg>
+                            </div>
+                            <span>Expert Consulting Team</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Clients Strip -->
+    <section class="clients">
+        <div class="container">
+            <p class="clients-title">Trusted by Industry Leaders</p>
+            <div class="clients-grid">
+                <div class="client-logo">ACME Manufacturing</div>
+                <div class="client-logo">TechCorp Industries</div>
+                <div class="client-logo">Global Motors</div>
+                <div class="client-logo">SmartFactory Inc</div>
+                <div class="client-logo">Industrial Systems</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Counters -->
+    <section class="counters">
+        <div class="container">
+            <div class="counters-grid">
+                <div class="counter-card glass-card">
+                    <div class="counter-number" data-target="250">0</div>
+                    <div class="counter-label">Projects Delivered</div>
+                </div>
+                <div class="counter-card glass-card">
+                    <div class="counter-number" data-target="150">0</div>
+                    <div class="counter-label">Enterprise Clients</div>
+                </div>
+                <div class="counter-card glass-card">
+                    <div class="counter-number" data-target="98">0</div>
+                    <div class="counter-label">Success Rate %</div>
+                </div>
+                <div class="counter-card glass-card">
+                    <div class="counter-number" data-target="15">0</div>
+                    <div class="counter-label">Years Experience</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Industry Evolution Section -->
+    <section id="evolution" class="evolution">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">Industrial Revolution</span>
+                <h2 class="section-title">The Evolution of Industry</h2>
+                <p class="section-subtitle">From steam power to human-centric AI collaboration</p>
+            </div>
+            <div class="evolution-timeline">
+                <svg class="timeline-connector" viewBox="0 0 1200 100" preserveAspectRatio="none">
+                    <path class="connector-path" d="M 0 50 Q 300 10, 600 50 T 1200 50" fill="none" stroke="url(#gradient)" stroke-width="2"/>
+                    <defs>
+                        <linearGradient id="gradient" x1="0%" y1="0%" x2="100%" y2="0%">
+                            <stop offset="0%" style="stop-color:#0066ff;stop-opacity:0.3" />
+                            <stop offset="50%" style="stop-color:#00d4ff;stop-opacity:0.8" />
+                            <stop offset="100%" style="stop-color:#0066ff;stop-opacity:0.3" />
+                        </linearGradient>
+                    </defs>
+                </svg>
+                
+                <div class="evolution-cards">
+                    <div class="evolution-card glass-card" data-industry="1.0">
+                        <div class="evolution-icon">
+                            <svg viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="2">
+                                <rect x="12" y="32" width="8" height="20" rx="2"/>
+                                <rect x="28" y="28" width="8" height="24" rx="2"/>
+                                <rect x="44" y="24" width="8" height="28" rx="2"/>
+                                <path d="M8 16 L56 16 M32 16 L32 8"/>
+                            </svg>
+                        </div>
+                        <h3 class="evolution-title">Industry 1.0</h3>
+                        <p class="evolution-period">1760-1840</p>
+                        <p class="evolution-desc">Mechanization through water and steam power</p>
+                        <div class="evolution-tech">Steam Engines • Mechanical Production</div>
+                    </div>
+
+                    <div class="evolution-card glass-card" data-industry="2.0">
+                        <div class="evolution-icon">
+                            <svg viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M32 12 L32 52 M20 24 L32 12 L44 24"/>
+                                <circle cx="32" cy="32" r="8"/>
+                                <path d="M16 40 L48 40"/>
+                            </svg>
+                        </div>
+                        <h3 class="evolution-title">Industry 2.0</h3>
+                        <p class="evolution-period">1870-1914</p>
+                        <p class="evolution-desc">Mass production through electrical energy</p>
+                        <div class="evolution-tech">Assembly Lines • Electricity</div>
+                    </div>
+
+                    <div class="evolution-card glass-card" data-industry="3.0">
+                        <div class="evolution-icon">
+                            <svg viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="2">
+                                <rect x="16" y="20" width="32" height="24" rx="2"/>
+                                <rect x="24" y="28" width="16" height="2"/>
+                                <rect x="24" y="34" width="16" height="2"/>
+                                <path d="M20 44 L20 52 M44 44 L44 52 M16 52 L48 52"/>
+                            </svg>
+                        </div>
+                        <h3 class="evolution-title">Industry 3.0</h3>
+                        <p class="evolution-period">1969-2000</p>
+                        <p class="evolution-desc">Automation using electronics and IT</p>
+                        <div class="evolution-tech">PLCs • Computers • Robots</div>
+                    </div>
+
+                    <div class="evolution-card glass-card active" data-industry="4.0">
+                        <div class="evolution-icon">
+                            <svg viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="2">
+                                <circle cx="32" cy="20" r="6"/>
+                                <circle cx="20" cy="44" r="6"/>
+                                <circle cx="44" cy="44" r="6"/>
+                                <path d="M32 26 L32 32 M26 37 L26 38 M38 37 L38 38"/>
+                                <path d="M32 32 L20 38 M32 32 L44 38" stroke-dasharray="2,2"/>
+                            </svg>
+                        </div>
+                        <h3 class="evolution-title">Industry 4.0</h3>
+                        <p class="evolution-period">2011-Present</p>
+                        <p class="evolution-desc">Cyber-physical systems and IoT integration</p>
+                        <div class="evolution-tech">IIoT • Big Data • Cloud</div>
+                    </div>
+
+                    <div class="evolution-card glass-card" data-industry="5.0">
+                        <div class="evolution-icon">
+                            <svg viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="2">
+                                <circle cx="32" cy="24" r="8"/>
+                                <path d="M24 32 Q20 36, 20 42 L44 42 Q44 36, 40 32"/>
+                                <path d="M28 42 L28 52 M36 42 L36 52"/>
+                                <circle cx="18" cy="24" r="4"/>
+                                <circle cx="46" cy="24" r="4"/>
+                                <path d="M22 24 L28 24 M36 24 L42 24"/>
+                            </svg>
+                        </div>
+                        <h3 class="evolution-title">Industry 5.0</h3>
+                        <p class="evolution-period">Emerging</p>
+                        <p class="evolution-desc">Human-AI collaboration for sustainability</p>
+                        <div class="evolution-tech">AI • Cobots • Green Tech</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Solutions / Services -->
+    <section id="solutions" class="solutions">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">What We Offer</span>
+                <h2 class="section-title">Our Solutions & Services</h2>
+            </div>
+            <div class="solutions-grid">
+                <div class="solution-card glass-card">
+                    <div class="solution-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M9 3v2m6-2v2M9 19v2m6-2v2M5 9H3m2 6H3m18-6h-2m2 6h-2M7 19h10a2 2 0 002-2V7a2 2 0 00-2-2H7a2 2 0 00-2 2v10a2 2 0 002 2zM9 9h6v6H9V9z"/>
+                        </svg>
+                    </div>
+                    <h3 class="solution-title">SCADA Systems</h3>
+                    <p class="solution-desc">Real-time monitoring and control solutions for complex industrial processes with advanced HMI design.</p>
+                </div>
+
+                <div class="solution-card glass-card">
+                    <div class="solution-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M21 16V8a2 2 0 00-1-1.73l-7-4a2 2 0 00-2 0l-7 4A2 2 0 003 8v8a2 2 0 001 1.73l7 4a2 2 0 002 0l7-4A2 2 0 0021 16z"/>
+                            <polyline points="7.5 4.21 12 6.81 16.5 4.21"/>
+                            <polyline points="7.5 19.79 7.5 14.6 3 12"/>
+                            <polyline points="21 12 16.5 14.6 16.5 19.79"/>
+                            <polyline points="3.27 6.96 12 12.01 20.73 6.96"/>
+                            <line x1="12" y1="22.08" x2="12" y2="12"/>
+                        </svg>
+                    </div>
+                    <h3 class="solution-title">Industrial IoT</h3>
+                    <p class="solution-desc">End-to-end IIoT architecture design, sensor integration, and predictive maintenance platforms.</p>
+                </div>
+
+                <div class="solution-card glass-card">
+                    <div class="solution-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <rect x="2" y="7" width="20" height="14" rx="2" ry="2"/>
+                            <path d="M16 21V5a2 2 0 00-2-2h-4a2 2 0 00-2 2v16"/>
+                        </svg>
+                    </div>
+                    <h3 class="solution-title">OT-IT Integration</h3>
+                    <p class="solution-desc">Secure convergence of operational technology and information technology for unified operations.</p>
+                </div>
+
+                <div class="solution-card glass-card">
+                    <div class="solution-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/>
+                        </svg>
+                    </div>
+                    <h3 class="solution-title">Edge Computing</h3>
+                    <p class="solution-desc">Low-latency data processing at the edge for time-critical industrial applications.</p>
+                </div>
+
+                <div class="solution-card glass-card">
+                    <div class="solution-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+                        </svg>
+                    </div>
+                    <h3 class="solution-title">Cybersecurity</h3>
+                    <p class="solution-desc">Industrial cybersecurity assessments, implementation, and 24/7 threat monitoring services.</p>
+                </div>
+
+                <div class="solution-card glass-card">
+                    <div class="solution-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/>
+                        </svg>
+                    </div>
+                    <h3 class="solution-title">Analytics & AI</h3>
+                    <p class="solution-desc">Advanced analytics, machine learning models, and AI-driven optimization for manufacturing.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Training -->
+    <section id="training" class="training">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">Skill Development</span>
+                <h2 class="section-title">Professional Training Programs</h2>
+            </div>
+            <div class="training-content">
+                <div class="training-card glass-card">
+                    <h3 class="training-title">Industry 4.0 Fundamentals</h3>
+                    <p class="training-desc">Comprehensive introduction to Industry 4.0 technologies, digital transformation strategies, and implementation roadmaps.</p>
+                    <ul class="training-list">
+                        <li>IoT Architecture & Protocols</li>
+                        <li>SCADA & HMI Design</li>
+                        <li>Data Analytics Basics</li>
+                        <li>Cybersecurity Essentials</li>
+                    </ul>
+                    <div class="training-footer">
+                        <span class="training-duration">40 Hours</span>
+                        <a href="#contact" class="training-link">Enroll Now →</a>
+                    </div>
+                </div>
+
+                <div class="training-card glass-card">
+                    <h3 class="training-title">Advanced PLC Programming</h3>
+                    <p class="training-desc">Master ladder logic, function blocks, and structured text programming for Siemens, Allen-Bradley, and Mitsubishi PLCs.</p>
+                    <ul class="training-list">
+                        <li>Multi-Platform PLC Programming</li>
+                        <li>Motion Control Systems</li>
+                        <li>Industrial Networks</li>
+                        <li>Troubleshooting & Optimization</li>
+                    </ul>
+                    <div class="training-footer">
+                        <span class="training-duration">60 Hours</span>
+                        <a href="#contact" class="training-link">Enroll Now →</a>
+                    </div>
+                </div>
+
+                <div class="training-card glass-card">
+                    <h3 class="training-title">IIoT Implementation</h3>
+                    <p class="training-desc">Hands-on training in designing, deploying, and managing Industrial IoT systems with real-world case studies.</p>
+                    <ul class="training-list">
+                        <li>Sensor Integration & Edge Devices</li>
+                        <li>MQTT, OPC UA Protocols</li>
+                        <li>Cloud Platforms & Dashboards</li>
+                        <li>Predictive Maintenance Systems</li>
+                    </ul>
+                    <div class="training-footer">
+                        <span class="training-duration">50 Hours</span>
+                        <a href="#contact" class="training-link">Enroll Now →</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="testimonials">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">Client Success Stories</span>
+                <h2 class="section-title">What Our Clients Say</h2>
+            </div>
+            <div class="testimonials-grid">
+                <div class="testimonial-card glass-card">
+                    <div class="testimonial-rating">★★★★★</div>
+                    <p class="testimonial-text">"SGA transformed our manufacturing facility with a state-of-the-art SCADA system. Their expertise in Industry 4.0 is unmatched, and the ROI was visible within 6 months."</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">RK</div>
+                        <div class="author-info">
+                            <div class="author-name">Rajesh Kumar</div>
+                            <div class="author-title">VP Operations, ACME Manufacturing</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonial-card glass-card">
+                    <div class="testimonial-rating">★★★★★</div>
+                    <p class="testimonial-text">"The IIoT solution implemented by SGA has revolutionized our predictive maintenance strategy. Downtime reduced by 40%, and our team received excellent training support."</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">SP</div>
+                        <div class="author-info">
+                            <div class="author-name">Sarah Patel</div>
+                            <div class="author-title">CTO, TechCorp Industries</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonial-card glass-card">
+                    <div class="testimonial-rating">★★★★★</div>
+                    <p class="testimonial-text">"Professional, knowledgeable, and responsive. SGA delivered our OT-IT integration project ahead of schedule with zero security compromises. Highly recommended!"</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">MJ</div>
+                        <div class="author-info">
+                            <div class="author-name">Michael Johnson</div>
+                            <div class="author-title">Plant Manager, Global Motors</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Form -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">Get In Touch</span>
+                <h2 class="section-title">Contact Us</h2>
+                <p class="section-subtitle">Ready to transform your manufacturing operations? Let's discuss your project.</p>
+            </div>
+            <div class="contact-content">
+                <form class="contact-form glass-card">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="name" class="form-label">Full Name</label>
+                            <input type="text" id="name" class="form-input" placeholder="John Doe" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email" class="form-label">Email Address</label>
+                            <input type="email" id="email" class="form-input" placeholder="john@company.com" required>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="phone" class="form-label">Phone Number</label>
+                            <input type="tel" id="phone" class="form-input" placeholder="+91 98765 43210">
+                        </div>
+                        <div class="form-group">
+                            <label for="company" class="form-label">Company Name</label>
+                            <input type="text" id="company" class="form-input" placeholder="Your Company">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="service" class="form-label">Service Interest</label>
+                        <select id="service" class="form-input">
+                            <option value="">Select a service</option>
+                            <option value="scada">SCADA Systems</option>
+                            <option value="iiot">Industrial IoT</option>
+                            <option value="ot-it">OT-IT Integration</option>
+                            <option value="edge">Edge Computing</option>
+                            <option value="security">Cybersecurity</option>
+                            <option value="analytics">Analytics & AI</option>
+                            <option value="training">Training Programs</option>
+                            <option value="consulting">Consulting Services</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="message" class="form-label">Message</label>
+                        <textarea id="message" class="form-input" rows="5" placeholder="Tell us about your project requirements..." required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-full">Send Message</button>
+                </form>
+
+                <div class="contact-info">
+                    <div class="info-card glass-card">
+                        <div class="info-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
+                            </svg>
+                        </div>
+                        <h4>Email Us</h4>
+                        <p>info@sgaindustrial.com</p>
+                    </div>
+
+                    <div class="info-card glass-card">
+                        <div class="info-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/>
+                            </svg>
+                        </div>
+                        <h4>Call Us</h4>
+                        <p>+91 98765 43210</p>
+                    </div>
+
+                    <div class="info-card glass-card">
+                        <div class="info-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/>
+                                <path d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/>
+                            </svg>
+                        </div>
+                        <h4>Visit Us</h4>
+                        <p>Visakhapatnam, India</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <div class="logo-section">
+                        <div class="logo-icon">SGA</div>
+                        <div class="logo-text">
+                            <span class="logo-main">SGA Industrial</span>
+                            <span class="logo-sub">Automations</span>
+                        </div>
+                    </div>
+                    <p class="footer-tagline">Pioneering Smart Manufacturing Excellence</p>
+                </div>
+                <div class="footer-bottom">
+                    <p>&copy; 2024 SGA Industrial Automations. All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Smooth Scroll
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({ behavior: 'smooth', block: 'start
